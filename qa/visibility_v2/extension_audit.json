@@ -1,0 +1,42 @@
+{
+  "stage": "vision_and_compiler_final_independent_review",
+  "test_result": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 103,
+    "duration_seconds": 18.224,
+    "breakdown": {
+      "existing_pipeline": 25,
+      "compiler": 52,
+      "vision_protocol": 26
+    },
+    "scope": "Actual compiler text execution and explicit local protocol/renderer test doubles; zero live vision/API calls.",
+    "log": "qa/visibility_v2/extensions_independent_tests.log",
+    "python_compilation": "passed"
+  },
+  "source_findings": [
+    "Provider executes only as an explicitly configured trusted absolute local executable, with stripped inherited environment, strict JSON, bounded pipe I/O, process-group cleanup and persisted retry/time accounting.",
+    "Request binds actual PNG bytes, current artifact hashes, full camera/spec/frame/seed settings and frozen source identity.",
+    "Returned review is schema-validated and constrained to three numeric changes and six priority-ordered camera-specific issues.",
+    "Unconfigured provider returns pending without calls or automatic acceptance."
+  ],
+  "limits": [
+    "This is a trusted local stdio protocol, not an implemented remote API client or a configured vision model.",
+    "The zero-cost declaration is not an operating-system network/billing sandbox. Trust/authorization of the executable remains external.",
+    "Optional explicit local PNG/JPEG reference payloads now attach bytes, labels, provenance URLs and hashes. Responses must echo all reference identities; no reference match or live provider execution is inferred.",
+    "Live provider end-to-end actual visual review/regeneration remains unverified."
+  ],
+  "compiler_bug": {
+    "status": "fixed_and_regression_verified",
+    "observation": "A compiled small-radius/thick-wall example passed generic schema yet .86*radius-wall produced an inner base radius -0.004.",
+    "acceptance_check": "Renderer-specific supported-profile constraints reject negative radii and regressions cover them; no render was started for the invalid example.",
+    "resolution": "Current compiler-side supported-profile guard rejects negative radii, rolled-lip/base inconsistencies, off-center stream overflow, fixed-card collisions and other fixed-builder offset conflicts. Adapter also validates initial/patched specs with this guard. Direct Japanese/English and rejection probes are saved."
+  },
+  "source_sha256": {
+    "cgstudio/brief.py": "622b6827817cca702dd7032d26b0382a0592cd5d079c94fc7d72a4fd98fcab71",
+    "cgstudio/vision.py": "f208ccb8cc3efb810ac055d84571385e9f6f9e5256bd616c67844ebf99a67d17",
+    "cgstudio/auto.py": "ae657b093e10da4c98d2f6ce214471a1546fb261f39a0e5ba55f130341fef0ef",
+    "tests/test_brief.py": "a157852e3408899921bb6f79fb9fd49ebdb39113b64920d22914195c6f98ee8b",
+    "tests/test_vision.py": "fa6efd16ba0bdeb6af8cce9a2de68899e8a7db5df4cb7c59fdae27b25b0f5b83",
+    "docs/brief-and-vision.md": "b6b707ed1b517ccd68ebef28c2830e467d8bfadaeeae05117b5305d4df838863"
+  }
+}

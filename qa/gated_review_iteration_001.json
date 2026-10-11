@@ -1,0 +1,53 @@
+{
+  "approved_parameter_patch": {
+    "render.samples": 96,
+    "cup.roughness": 0.025,
+    "liquid.roughness": 0.018,
+    "stage.card_value": 0.22,
+    "stage.ground_value": 0.35,
+    "lighting.stream_energy": 500,
+    "lighting.stream_size": 0.9,
+    "liquid.stream_radius": 0.09
+  },
+  "image_sha256": "41e31bbe1718162e05ca847273043d08993de678da3ecd8d73e71f80afd6d36b",
+  "images_sha256": {
+    "hero": "41e31bbe1718162e05ca847273043d08993de678da3ecd8d73e71f80afd6d36b",
+    "side": "f32e7d0a39f22be2ec69d5dda92b46f3681ebd2c06e2873544e9c8ce67a383f7",
+    "top": "9be83d1cd004380fc200e908f26d8dc8565e5f5b16a222f1a8c5d8eb1c249888"
+  },
+  "issues": [
+    {
+      "priority": "P1",
+      "category": "other",
+      "observation": "Render: obvious granular noise across all three actual images obscures wall, liquid surface and stream detail.",
+      "requested_change": "Increase samples from 32 to 96 within the run budget. Reinspect all three rendered images at native size; keep denoising as a separately labeled output."
+    },
+    {
+      "priority": "P1",
+      "category": "material",
+      "observation": "MaterialLighting: the lower liquid reads like a pale opaque sleeve in hero, with broad rectangular highlights in side, despite intended clear resin.",
+      "requested_change": "Reduce vessel/liquid roughness and darken the refraction card/ground. Preserve readable transmitted/refracted detail and a distinct free surface rather than a solid-looking fill."
+    },
+    {
+      "priority": "P1",
+      "category": "lighting",
+      "observation": "MaterialLighting: the upper stream nearly disappears across part of the nozzle-to-vessel gap in hero and side.",
+      "requested_change": "Add a wider controlled stream-reflection strip and modestly increase the stream radius. Confirm a visible continuous edge or reflection from nozzle to impact in all three views."
+    }
+  ],
+  "iteration": 1,
+  "reviewer": {
+    "image_inspected": true,
+    "inspected_cameras": [
+      "hero",
+      "side",
+      "top"
+    ],
+    "kind": "vision_model",
+    "name": "Independent CG Studio visual reviewer"
+  },
+  "run_id": "fec70b31-3218-4280-ae88-eddc166c8229",
+  "spec_sha256": "8518d841be3f030b9757363177cc28234c26d4daa012b8dd9eebb667e795338b",
+  "status": "revise",
+  "summary": "Actual hero, side and top pixels were inspected at 640x640. The vessel has visible rim/base thickness, the top view shows a free surface, and the metal witness and contact shadows read plausibly. However render grain obscures clear optical detail; broad pale card/reflection contributions make the lower resin resemble an opaque insert; and the upper stream nearly disappears in hero/side. The approved patch is a bounded look-development experiment, not a promise that every issue is solved. No photographic reference agreement, animation continuity, or A/C browser appearance was evaluated."
+}

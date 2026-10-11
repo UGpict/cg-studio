@@ -1,0 +1,474 @@
+{
+  "$id": "https://example.invalid/cg-studio/spec.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "animation": {
+      "additionalProperties": false,
+      "properties": {
+        "fill_end": {
+          "maximum": 10,
+          "minimum": 0.01,
+          "type": "number"
+        },
+        "fill_start": {
+          "maximum": 10,
+          "minimum": 0.01,
+          "type": "number"
+        },
+        "fps": {
+          "maximum": 60,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "frames": {
+          "maximum": 240,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "hero_frame": {
+          "maximum": 240,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "mode": {
+          "const": "art_directed_fixed_topology",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fps",
+        "frames",
+        "hero_frame",
+        "mode",
+        "fill_start",
+        "fill_end"
+      ],
+      "type": "object"
+    },
+    "brief": {
+      "maxLength": 10000,
+      "minLength": 1,
+      "type": "string"
+    },
+    "budget": {
+      "additionalProperties": false,
+      "properties": {
+        "max_iterations": {
+          "maximum": 3,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "max_paid_cost_usd": {
+          "const": 0,
+          "type": "number"
+        },
+        "per_render_seconds": {
+          "exclusiveMinimum": 0,
+          "maximum": 180,
+          "minimum": 0,
+          "type": "number"
+        },
+        "total_seconds": {
+          "exclusiveMinimum": 0,
+          "maximum": 1800,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "max_iterations",
+        "total_seconds",
+        "per_render_seconds",
+        "max_paid_cost_usd"
+      ],
+      "type": "object"
+    },
+    "cameras": {
+      "additionalProperties": false,
+      "properties": {
+        "hero": {
+          "additionalProperties": false,
+          "properties": {
+            "ortho_scale": {
+              "maximum": 100,
+              "minimum": 0.1,
+              "type": "number"
+            },
+            "position": {
+              "items": {
+                "maximum": 100,
+                "minimum": -100,
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "target": {
+              "items": {
+                "maximum": 100,
+                "minimum": -100,
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          },
+          "required": [
+            "position",
+            "target",
+            "ortho_scale"
+          ],
+          "type": "object"
+        },
+        "side": {
+          "additionalProperties": false,
+          "properties": {
+            "ortho_scale": {
+              "maximum": 100,
+              "minimum": 0.1,
+              "type": "number"
+            },
+            "position": {
+              "items": {
+                "maximum": 100,
+                "minimum": -100,
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "target": {
+              "items": {
+                "maximum": 100,
+                "minimum": -100,
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          },
+          "required": [
+            "position",
+            "target",
+            "ortho_scale"
+          ],
+          "type": "object"
+        },
+        "top": {
+          "additionalProperties": false,
+          "properties": {
+            "ortho_scale": {
+              "maximum": 100,
+              "minimum": 0.1,
+              "type": "number"
+            },
+            "position": {
+              "items": {
+                "maximum": 100,
+                "minimum": -100,
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "target": {
+              "items": {
+                "maximum": 100,
+                "minimum": -100,
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          },
+          "required": [
+            "position",
+            "target",
+            "ortho_scale"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "hero",
+        "side",
+        "top"
+      ],
+      "type": "object"
+    },
+    "cup": {
+      "additionalProperties": false,
+      "properties": {
+        "base_thickness": {
+          "maximum": 1,
+          "minimum": 0.01,
+          "type": "number"
+        },
+        "height": {
+          "maximum": 10,
+          "minimum": 0.2,
+          "type": "number"
+        },
+        "ior": {
+          "maximum": 2.5,
+          "minimum": 1,
+          "type": "number"
+        },
+        "outer_radius": {
+          "maximum": 5,
+          "minimum": 0.1,
+          "type": "number"
+        },
+        "roughness": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "wall_thickness": {
+          "maximum": 0.5,
+          "minimum": 0.005,
+          "type": "number"
+        }
+      },
+      "required": [
+        "outer_radius",
+        "height",
+        "wall_thickness",
+        "base_thickness",
+        "roughness",
+        "ior"
+      ],
+      "type": "object"
+    },
+    "lighting": {
+      "additionalProperties": false,
+      "properties": {
+        "exposure": {
+          "maximum": 8,
+          "minimum": -8,
+          "type": "number"
+        },
+        "fill_energy": {
+          "maximum": 10000,
+          "minimum": 0,
+          "type": "number"
+        },
+        "key_energy": {
+          "maximum": 10000,
+          "minimum": 0,
+          "type": "number"
+        },
+        "rim_energy": {
+          "maximum": 10000,
+          "minimum": 0,
+          "type": "number"
+        },
+        "stream_energy": {
+          "maximum": 5000,
+          "minimum": 0,
+          "type": "number"
+        },
+        "stream_size": {
+          "maximum": 3,
+          "minimum": 0.05,
+          "type": "number"
+        },
+        "world_strength": {
+          "maximum": 10,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "key_energy",
+        "fill_energy",
+        "rim_energy",
+        "stream_energy",
+        "stream_size",
+        "world_strength",
+        "exposure"
+      ],
+      "type": "object"
+    },
+    "liquid": {
+      "additionalProperties": false,
+      "properties": {
+        "absorption_color": {
+          "items": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "maxItems": 3,
+          "minItems": 3,
+          "type": "array"
+        },
+        "absorption_density": {
+          "maximum": 10,
+          "minimum": 0,
+          "type": "number"
+        },
+        "cloudiness": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "fill_height": {
+          "maximum": 10,
+          "minimum": 0.01,
+          "type": "number"
+        },
+        "ior": {
+          "maximum": 2.5,
+          "minimum": 1,
+          "type": "number"
+        },
+        "meniscus_height": {
+          "maximum": 0.2,
+          "minimum": 0,
+          "type": "number"
+        },
+        "roughness": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "stream_radius": {
+          "maximum": 0.3,
+          "minimum": 0.005,
+          "type": "number"
+        },
+        "stream_top": {
+          "maximum": 20,
+          "minimum": 0.1,
+          "type": "number"
+        },
+        "transmission": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "fill_height",
+        "roughness",
+        "ior",
+        "transmission",
+        "absorption_density",
+        "absorption_color",
+        "cloudiness",
+        "meniscus_height",
+        "stream_radius",
+        "stream_top"
+      ],
+      "type": "object"
+    },
+    "project": {
+      "maxLength": 200,
+      "minLength": 1,
+      "type": "string"
+    },
+    "render": {
+      "additionalProperties": false,
+      "properties": {
+        "denoise": {
+          "type": "boolean"
+        },
+        "device": {
+          "const": "CPU",
+          "type": "string"
+        },
+        "engine": {
+          "const": "CYCLES",
+          "type": "string"
+        },
+        "height": {
+          "maximum": 2048,
+          "minimum": 64,
+          "type": "integer"
+        },
+        "samples": {
+          "maximum": 256,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "seed": {
+          "maximum": 2147483647,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "transparent": {
+          "type": "boolean"
+        },
+        "width": {
+          "maximum": 2048,
+          "minimum": 64,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "width",
+        "height",
+        "samples",
+        "seed",
+        "engine",
+        "device",
+        "denoise",
+        "transparent"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "stage": {
+      "additionalProperties": false,
+      "properties": {
+        "card_value": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "card_width": {
+          "maximum": 3,
+          "minimum": 0.1,
+          "type": "number"
+        },
+        "ground_value": {
+          "maximum": 2,
+          "minimum": 0.05,
+          "type": "number"
+        }
+      },
+      "required": [
+        "card_value",
+        "card_width",
+        "ground_value"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "project",
+    "brief",
+    "render",
+    "budget",
+    "cup",
+    "liquid",
+    "lighting",
+    "stage",
+    "animation",
+    "cameras"
+  ],
+  "title": "CG Studio scene specification",
+  "type": "object"
+}

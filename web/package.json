@@ -1,0 +1,1 @@
+{"name":"cg-studio-web-benchmark","private":true,"type":"module","scripts":{"capture":"node ../scripts/capture_web.mjs"},"dependencies":{"three":"0.180.0","playwright-core":"1.55.1"}}

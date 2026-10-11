@@ -1,0 +1,117 @@
+{
+  "review_state": "changes_requested",
+  "gate_decision": "rejected",
+  "scope": "Three matched raw Cycles camera views and their three HDR color-only OIDN versions, inspected as actual pixels at 640x640.",
+  "baseline": "runs/gated/iteration_001",
+  "final": "runs/gated/iteration_003",
+  "reference_agreement": "Not evaluated; no photographic reference supplied or inspected.",
+  "comparison_type": "Look-development revisions: samples, materials, lighting, stage, and source geometry changed. Not a one-variable performance or image-quality benchmark.",
+  "images": {
+    "hero": {
+      "raw": {
+        "path": "runs/gated/iteration_003/hero.png",
+        "sha256": "dfa99886c5afa8009fe41260b5ab3bf821301233bb584813af01a514d8126695",
+        "actual_pixels_inspected": true
+      },
+      "denoised": {
+        "path": "runs/gated/iteration_003/hero_linear_color_only_oidn.png",
+        "sha256": "bfdba941d536288d14f345bd5f76e8d7e2472bf28260af4fccc58df7735249bf",
+        "actual_pixels_inspected": true
+      }
+    },
+    "side": {
+      "raw": {
+        "path": "runs/gated/iteration_003/side.png",
+        "sha256": "bd87f46000946ab72256eee62e8d0b8d11f21b573bbe8ae7df749fcf25584a2c",
+        "actual_pixels_inspected": true
+      },
+      "denoised": {
+        "path": "runs/gated/iteration_003/side_linear_color_only_oidn.png",
+        "sha256": "ee63d70e4e7a35483ec98f1096539d3ed1b93befbd4a6a43180eaf578da0bc6d",
+        "actual_pixels_inspected": true
+      }
+    },
+    "top": {
+      "raw": {
+        "path": "runs/gated/iteration_003/top.png",
+        "sha256": "abaff1ee05e5a0e3f9be350b297fdf2e1a9d381dbd3701a1a49d2a52d37ce6b9",
+        "actual_pixels_inspected": true
+      },
+      "denoised": {
+        "path": "runs/gated/iteration_003/top_linear_color_only_oidn.png",
+        "sha256": "098d349c726cf6cff79614c069b6c570863724bdbb739992a7587eadc9387106",
+        "actual_pixels_inspected": true
+      }
+    }
+  },
+  "resolved_or_improved": [
+    {
+      "id": "MODEL-001",
+      "owner": "Modeling",
+      "status": "resolved_in_source_and_measured",
+      "detail": "Cup/liquid/stream have zero non-manifold edges and positive signed volume in saved final scene; nozzle bore 0.0978 exceeds stream top radius 0.0918. Source markers fit within card bounds. These checks do not prove all self-intersections or fluid physics."
+    },
+    {
+      "id": "VIS-001",
+      "owner": "Render",
+      "status": "improved_with_separate_denoising",
+      "detail": "OIDN removes most visible grain in each view and preserves the primary rim, stream and metal silhouettes; fine liquid detail softens. Raw noise remains."
+    },
+    {
+      "id": "VIS-002",
+      "owner": "MaterialLighting",
+      "status": "partially_improved",
+      "detail": "Final hero right lower fill has less broad pale wash. Side has legible refraction but bright reflection patches remain; darker top/front faces lose some clear-medium readability."
+    },
+    {
+      "id": "EVID-001",
+      "owner": "Render",
+      "status": "resolved",
+      "detail": "Final per-camera manifests retain camera-specific settings and timing. Gate binds all three image hashes."
+    }
+  ],
+  "remaining_findings": [
+    {
+      "id": "VIS-003",
+      "priority": "P1",
+      "owner": "MaterialLighting",
+      "views": [
+        "hero"
+      ],
+      "finding": "Substantial middle portion of upper stream disappears against the dark background in both raw and denoised hero.",
+      "acceptance_check": "A visible continuous edge or reflection connects nozzle to impact at hero, side and top without changing the intended clear medium."
+    },
+    {
+      "id": "VIS-004",
+      "priority": "P2",
+      "owner": "MaterialLighting",
+      "views": [
+        "hero",
+        "side",
+        "top"
+      ],
+      "finding": "Dark setup trades pale-wash reduction for suppressed wall/free-surface detail and dominant isolated reflection patches.",
+      "acceptance_check": "The clear liquid reads as a filled volume in every view with deliberate transmitted/refracted detail and no washed-out or blacked-out interfaces."
+    },
+    {
+      "id": "ANIM-001",
+      "priority": "P2",
+      "owner": "Animation",
+      "finding": "36-frame motion demonstration uses the earlier iteration-002 look and has only frame-sheet visual inspection, not live playback review.",
+      "acceptance_check": "Before final-film acceptance, render final geometry/look and inspect actual playback for stream continuity and temporal noise."
+    }
+  ],
+  "positive_observations": [
+    "Finite vessel wall, rim, and base thickness remain readable in appropriate views.",
+    "Top view provides a distinct liquid free surface and receiving stream.",
+    "Metal witness has shaped, metallic reflections and grounded support.",
+    "No excessive bloom or overall white highlight wash."
+  ],
+  "denoising": {
+    "method": "Intel OIDN RT HDR color-only",
+    "auxiliary_passes": [],
+    "temporal_denoising": false,
+    "raw_preserved": true
+  },
+  "decision_owner": "Project director; independent reviewer recommends no beauty acceptance and no fourth attempt in this run."
+}

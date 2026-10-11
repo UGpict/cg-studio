@@ -1,0 +1,82 @@
+{
+  "candidate": "visibility_v2/001",
+  "decision": "changes_requested",
+  "actual_pixels_inspected": [
+    "hero raw",
+    "hero color-only OIDN",
+    "side raw",
+    "side color-only OIDN",
+    "top raw",
+    "top color-only OIDN"
+  ],
+  "images": {
+    "hero.png": {
+      "path": "experiments/visibility_v2/iteration_001/hero.png",
+      "sha256": "0e0fa459cb1cf24bc5838c65a718e70b795ea7a9a0f8a87c7c8f18eff7f660e7"
+    },
+    "hero_linear_color_only_oidn.png": {
+      "path": "experiments/visibility_v2/iteration_001/hero_linear_color_only_oidn.png",
+      "sha256": "85084411fe833b08e901f7a127fa49be1ee18a0741838560e278edbe5b2a6a2b"
+    },
+    "side.png": {
+      "path": "experiments/visibility_v2/iteration_001/side.png",
+      "sha256": "2b99a7150f05e8614f47c33b0accad70766184a249d29a659fa43742fadd2146"
+    },
+    "side_linear_color_only_oidn.png": {
+      "path": "experiments/visibility_v2/iteration_001/side_linear_color_only_oidn.png",
+      "sha256": "5e41d27de05aa6f2b9c6b846904eeb1ae6180bb4df19edcab2c8206ede343108"
+    },
+    "top.png": {
+      "path": "experiments/visibility_v2/iteration_001/top.png",
+      "sha256": "ca3931f95e9f181fdbd4c4a72e82661ee0eb398fa0b4512f80ef858ab3ec9046"
+    },
+    "top_linear_color_only_oidn.png": {
+      "path": "experiments/visibility_v2/iteration_001/top_linear_color_only_oidn.png",
+      "sha256": "9d3d81e60ced8374294723ffe27770af27eb599c30ff4e6e0cd17f5fe1e81530"
+    }
+  },
+  "reference_scope": "Qualitative actual-image comparison against REF-01/REF-02 in reference_evidence.json; different scene/cup, no numeric similarity or exact material match.",
+  "improvements": [
+    {
+      "id": "V2-STREAM",
+      "owner": "MaterialLighting",
+      "finding": "Stream now has visible continuous edge/highlight contrast from supported feed source to the receiving volume in all three views.",
+      "status": "still_frame_cue_passed"
+    },
+    {
+      "id": "V2-SOURCE",
+      "owner": "Modeling",
+      "finding": "Feed tube extends out of frame and removes the floating short-nozzle presentation.",
+      "status": "improved"
+    }
+  ],
+  "findings": [
+    {
+      "id": "V2-INTERFACE",
+      "priority": "P1",
+      "owner": "Modeling/MaterialLighting",
+      "views": [
+        "hero",
+        "side",
+        "top"
+      ],
+      "observation": "The liquid interior forms a bulb-like upper region separated by broad black horizontal bands; it reads as stacked inserts rather than one clear filled volume. This remains in raw and denoised outputs.",
+      "acceptance_check": "Liquid reads as one continuous clear volume bounded by the vessel with a distinct free surface; refracted background/floor information remains legible without broad unmotivated opaque bands.",
+      "next_experiment": "Diagnose overlapping/duplicate dielectric interfaces and relative IOR while holding candidate-001 cameras/lighting/spec constant. Preserve clear stream visibility."
+    },
+    {
+      "id": "V2-NOISE",
+      "priority": "P2",
+      "owner": "Render",
+      "observation": "Raw images remain visibly granular; OIDN cleans them but softens fine impact-surface detail.",
+      "acceptance_check": "Retain raw evidence and label cleanup; do not attribute denoising to physical or material correction."
+    }
+  ],
+  "source_geometry": "Producer geometry report passes finite/closed-positive-volume/nozzle-clearance checks, which do not establish optical correctness.",
+  "not_established": [
+    "New-look animation playback",
+    "Exact reference match",
+    "A/C appearance or performance",
+    "Fluid simulation"
+  ]
+}

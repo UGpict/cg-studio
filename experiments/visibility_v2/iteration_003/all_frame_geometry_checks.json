@@ -1,0 +1,874 @@
+{
+  "scene": "/workspace/shared/cg_studio/experiments/visibility_v2/iteration_003/scene.blend",
+  "frames": {
+    "1": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378224539642,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5113,
+        "faces": 5192,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.164794594372066,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "2": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378194530922,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5190,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.2117938205951715,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "3": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378330346827,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5190,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.258942732302357,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "4": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378426824133,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5190,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.306241673367709,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "5": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378285653573,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5190,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.3536907643145741,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "6": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437791991299,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5190,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.4012903185190182,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "7": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437816353604,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.4490406710922907,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "8": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378692146093,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5106,
+        "faces": 5186,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.4969417794013766,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "9": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378146202274,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5106,
+        "faces": 5186,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.5449941454233722,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "10": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437811754958,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5106,
+        "faces": 5186,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.593197972102432,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "11": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.12643779699552,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5107,
+        "faces": 5187,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.6415532601077605,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "12": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378214452995,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5107,
+        "faces": 5187,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.690060561557952,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "13": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378153544667,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5107,
+        "faces": 5187,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.7387199339930672,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "14": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378288222279,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.787531623990313,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "15": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377810311004,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.8364957866793314,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "16": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377663083178,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.885612863725018,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "17": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377930566076,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.9348829560791505,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "18": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377877826166,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.9843064134905157,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "19": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437824368204,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.0338834218066646,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "20": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378171335134,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.0836141501901166,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "21": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378582430563,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.1334988052007655,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "22": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437827781325,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.183537676788808,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "23": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437781325262,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.2337310436293154,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "24": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377966023948,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.2840790926030383,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "25": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377708831743,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.3345823417860947,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "26": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378433201667,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.3852404968592085,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "27": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377771358798,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.436054113172888,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "28": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.12643779400636,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.487023433275652,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "29": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377586001433,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.538148648811301,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "30": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377922305249,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5109,
+        "faces": 5189,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.5894299103369103,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "31": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.12643783270119,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5191,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.6408677122966635,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "32": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437760416649,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5191,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.6924617897770413,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "33": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378152190888,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5191,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.7442130757639593,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "34": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.126437793242459,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5111,
+        "faces": 5191,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.7961213947233725,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "35": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378088664708,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5112,
+        "faces": 5192,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.8481868608133576,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "36": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377859420867,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5110,
+        "faces": 5191,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.9004098967564116,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    }
+  },
+  "fluid_simulation": false,
+  "input_geometry": "shape keys",
+  "evaluated_geometry": "live Boolean union with potentially changing topology",
+  "checks_pass": true,
+  "volume_strictly_increases": true
+}

@@ -1,0 +1,24 @@
+{
+  "status": "compile_to_actual_blender_render_passed",
+  "brief_language": "Japanese",
+  "blender": "4.3.2",
+  "dimensions": [
+    128,
+    128
+  ],
+  "samples": 8,
+  "frame": 18,
+  "camera": "hero",
+  "render_process_seconds": 2.924584,
+  "process_timeout_seconds": 60,
+  "paid_usd": 0,
+  "pixels_inspected": true,
+  "scope": "Compilation and actual scene/render smoke only; low resolution is not a beauty acceptance test; original baseline renderer, not visibility_v2.",
+  "sha256": {
+    "hero.png": "eab32f7c9801898cfdbd5f802f073f269c1b881d3f163af893860dbf07bbee56",
+    "spec.json": "c9ab3fbbb01101020c1aa55dd545bccbd8a9fd74fd90e51762c1805aa1746240",
+    "brief-report.json": "3526788f88ade6ec67b2eded2822ae794fdc9f062d60d6a1f25333caff13ba82",
+    "execution.json": "c59094221c541131ff28e3bd1423b05313da6ea6eaaaabb93c7ebccaa76d888b",
+    "manifest_hero.json": "646028edae35c0ce7440ab43273f6ba7d3b2677bd78d7e52432cef3e80ba5815"
+  }
+}

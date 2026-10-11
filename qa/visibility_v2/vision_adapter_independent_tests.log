@@ -1,0 +1,28 @@
+test_camera_and_frame_alignment_is_required (test_vision.VisionTests.test_camera_and_frame_alignment_is_required) ... ok
+test_cannot_reset_attempts_by_changing_provider_or_limits (test_vision.VisionTests.test_cannot_reset_attempts_by_changing_provider_or_limits) ... ok
+test_changed_images_and_builder_fail_before_provider (test_vision.VisionTests.test_changed_images_and_builder_fail_before_provider) ... ok
+test_cli_missing_configuration_reports_pending_honestly (test_vision.VisionTests.test_cli_missing_configuration_reports_pending_honestly) ... ok
+test_fixture_can_accept_only_with_explicit_nonvisual_label (test_vision.VisionTests.test_fixture_can_accept_only_with_explicit_nonvisual_label) ... ok
+test_fixture_mode_is_explicit_and_cannot_certify_production (test_vision.VisionTests.test_fixture_mode_is_explicit_and_cannot_certify_production) ... ok
+test_fixture_revision_runs_real_protocol_without_camera_seed_change (test_vision.VisionTests.test_fixture_revision_runs_real_protocol_without_camera_seed_change) ... ok
+test_interrupted_attempt_blocks_reexecution (test_vision.VisionTests.test_interrupted_attempt_blocks_reexecution) ... ok
+test_malformed_untrusted_outputs_fail_closed_and_retry_is_bounded (test_vision.VisionTests.test_malformed_untrusted_outputs_fail_closed_and_retry_is_bounded) ... ok
+test_no_provider_is_pending_without_execution_or_ledger (test_vision.VisionTests.test_no_provider_is_pending_without_execution_or_ledger) ... ok
+test_oversized_stdout_stderr_nonzero_exit_are_bounded (test_vision.VisionTests.test_oversized_stdout_stderr_nonzero_exit_are_bounded) ... ok
+test_priority_and_patch_bounds_and_programmatic_safety (test_vision.VisionTests.test_priority_and_patch_bounds_and_programmatic_safety) ... ok
+test_provider_cannot_exceed_remaining_pipeline_time (test_vision.VisionTests.test_provider_cannot_exceed_remaining_pipeline_time) ... ok
+test_provider_cannot_wait_forever_without_reading_stdin (test_vision.VisionTests.test_provider_cannot_wait_forever_without_reading_stdin) ... ok
+test_provider_descendants_are_killed_on_timeout (test_vision.VisionTests.test_provider_descendants_are_killed_on_timeout) ... ok
+test_real_manifest_contract_binds_full_spec_and_render_settings (test_vision.VisionTests.test_real_manifest_contract_binds_full_spec_and_render_settings) ... ok
+test_request_contains_actual_three_png_bytes_and_frozen_cameras (test_vision.VisionTests.test_request_contains_actual_three_png_bytes_and_frozen_cameras) ... ok
+test_saved_schema_matches_runtime_contract (test_vision.VisionTests.test_saved_schema_matches_runtime_contract) ... ok
+test_third_revision_exhausts_original_render_budget (test_vision.VisionTests.test_third_revision_exhausts_original_render_budget) ... ok
+test_timeout_kills_and_remains_pending (test_vision.VisionTests.test_timeout_kills_and_remains_pending) ... ok
+test_unknown_config_and_credentials_are_not_accepted (test_vision.VisionTests.test_unknown_config_and_credentials_are_not_accepted) ... ok
+test_unsorted_priorities_and_too_many_issues_rejected (test_vision.VisionTests.test_unsorted_priorities_and_too_many_issues_rejected) ... ok
+test_zero_cost_is_enforced_before_launch_and_in_response (test_vision.VisionTests.test_zero_cost_is_enforced_before_launch_and_in_response) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 10.140s
+
+OK

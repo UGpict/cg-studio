@@ -1,0 +1,66 @@
+{
+  "startedAt": "2026-10-11T12:33:53.466Z",
+  "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v24.19.0"
+  },
+  "browserExecutable": "/usr/bin/chromium",
+  "runs": [
+    {
+      "mode": "A",
+      "camera": "hero",
+      "status": "not_run",
+      "reason": "Chromium cannot start in this execution environment: socket() failed: Operation not permitted. No page was loaded and no image or frame timing was measured.",
+      "attempted_browser_launch": true
+    },
+    {
+      "mode": "A",
+      "camera": "side",
+      "status": "not_run",
+      "reason": "Chromium cannot start in this execution environment: socket() failed: Operation not permitted. No page was loaded and no image or frame timing was measured.",
+      "attempted_browser_launch": false
+    },
+    {
+      "mode": "A",
+      "camera": "top",
+      "status": "not_run",
+      "reason": "Chromium cannot start in this execution environment: socket() failed: Operation not permitted. No page was loaded and no image or frame timing was measured.",
+      "attempted_browser_launch": false
+    },
+    {
+      "mode": "C",
+      "camera": "hero",
+      "status": "not_run",
+      "reason": "Chromium cannot start in this execution environment: socket() failed: Operation not permitted. No page was loaded and no image or frame timing was measured.",
+      "attempted_browser_launch": false
+    },
+    {
+      "mode": "C",
+      "camera": "side",
+      "status": "not_run",
+      "reason": "Chromium cannot start in this execution environment: socket() failed: Operation not permitted. No page was loaded and no image or frame timing was measured.",
+      "attempted_browser_launch": false
+    },
+    {
+      "mode": "C",
+      "camera": "top",
+      "status": "not_run",
+      "reason": "Chromium cannot start in this execution environment: socket() failed: Operation not permitted. No page was loaded and no image or frame timing was measured.",
+      "attempted_browser_launch": false
+    }
+  ],
+  "status": "not_run",
+  "note": "Actual cloud Chromium WebGL run; check each renderer provenance. Not a desktop or target-device performance claim.",
+  "launchArgs": [
+    "--no-sandbox",
+    "--disable-dev-shm-usage",
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader"
+  ],
+  "error": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --disable-dev-shm-usage --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/tmp/playwright_chromiumdev_profile-YEoKIP --remote-debugging-pipe --no-startup-window\n<launched> pid=17\n[pid=17][err] /usr/bin/chromium: 9: [: 5225730048: unexpected operator\n[pid=17][err] [17:17:1011/213353.630144:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)\n[pid=17][err] [1011/213353.631570:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)\nCall log:\n\u001b[2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --disable-dev-shm-usage --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/tmp/playwright_chromiumdev_profile-YEoKIP --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=17\u001b[22m\n\u001b[2m  - [pid=17][err] /usr/bin/chromium: 9: [: 5225730048: unexpected operator\u001b[22m\n\u001b[2m  - [pid=17][err] [17:17:1011/213353.630144:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)\u001b[22m\n\u001b[2m  - [pid=17][err] [1011/213353.631570:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)\u001b[22m\n\u001b[2m  - [pid=17] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=17] <kill>\u001b[22m\n\u001b[2m  - [pid=17] <will force kill>\u001b[22m\n\u001b[2m  - [pid=17] <process did exit: exitCode=null, signal=SIGABRT>\u001b[22m\n\u001b[2m  - [pid=17] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=17] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=17] <gracefully close end>\u001b[22m\n",
+  "finishedAt": "2026-10-11T12:33:53.645Z",
+  "attempt_summary": "Two launch attempts: normal shell and reviewed escalated shell. Both failed at process_singleton_posix socket() EPERM.",
+  "renderer_observed": null,
+  "hardware_gpu_benchmark": false
+}

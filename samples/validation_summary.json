@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "implementation_status": "executable_and_tested",
+  "visual_status": "changes_requested",
+  "controller_terminal_status": "rejected",
+  "unit_tests": 25,
+  "actual_iterations": 3,
+  "actual_fixed_camera_renders": 9,
+  "gated_active_seconds": 513.320844,
+  "paid_cost_usd": 0,
+  "blender_version": "4.3.2",
+  "renderer": "Cycles CPU",
+  "browser_A": "not_run: Chromium socket EPERM before page load",
+  "browser_C": "GLTFLoader import passed; WebGL not_run",
+  "motion_sample": "Earlier iteration-002 look; 384x384, 36 frames, 12fps, 3s, decode passed",
+  "vision_adapter": "unconfigured; explicit image-capable reviewer or human required",
+  "files": [
+    "resin_scene.blend",
+    "resin_scene.glb",
+    "hero_iteration_003_raw.png",
+    "hero_iteration_003_denoised.png",
+    "side_iteration_003_denoised.png",
+    "top_iteration_003_denoised.png",
+    "resin_motion_preview_iteration_002.mp4"
+  ],
+  "limitations": [
+    "Hero stream loses contrast",
+    "Final dark look suppresses some vessel detail",
+    "No final-film quality acceptance",
+    "No cloudiness-to-clear implementation yet",
+    "No simulated fluid or GPU/web performance claim"
+  ]
+}

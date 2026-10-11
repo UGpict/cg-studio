@@ -1,0 +1,338 @@
+{
+  "active_seconds": 513.320844,
+  "created_at": "2026-10-11T12:39:58.893813+00:00",
+  "finished_at": "2026-10-11T12:55:49.667087+00:00",
+  "frame": 18,
+  "iterations": [
+    {
+      "artifact_sha256": {
+        "hero.png": "41e31bbe1718162e05ca847273043d08993de678da3ecd8d73e71f80afd6d36b",
+        "manifest_hero.json": "bc9306221e9d99b3400aad7f80110e3bfd90cab7f94f1bc58e112044d9d5210b",
+        "manifest_side.json": "dddbfbf219c4b735b44b607fc161ab35e10c044e7dd9e2524e6449428cc932eb",
+        "manifest_top.json": "05475d69d3422891a377637f16c73fb3dbb362d5c9feee6bd1c4aa1622cabd87",
+        "scene.blend": "f4a6dbd0d370c0d455f7f0063cf918dd3de3b226304dd20da391639ed078b2d4",
+        "scene.glb": "e72cdb128f3885a551818b9b4e87b6af7ed85ce88454a9180ed3a0d23d085eab",
+        "scene_manifest.json": "bc9306221e9d99b3400aad7f80110e3bfd90cab7f94f1bc58e112044d9d5210b",
+        "side.png": "f32e7d0a39f22be2ec69d5dda92b46f3681ebd2c06e2873544e9c8ce67a383f7",
+        "top.png": "9be83d1cd004380fc200e908f26d8dc8565e5f5b16a222f1a8c5d8eb1c249888"
+      },
+      "directory": "iteration_001",
+      "finished_at": "2026-10-11T12:41:28.166412+00:00",
+      "image_sha256": "41e31bbe1718162e05ca847273043d08993de678da3ecd8d73e71f80afd6d36b",
+      "images_sha256": {
+        "hero": "41e31bbe1718162e05ca847273043d08993de678da3ecd8d73e71f80afd6d36b",
+        "side": "f32e7d0a39f22be2ec69d5dda92b46f3681ebd2c06e2873544e9c8ce67a383f7",
+        "top": "9be83d1cd004380fc200e908f26d8dc8565e5f5b16a222f1a8c5d8eb1c249888"
+      },
+      "iteration": 1,
+      "multiview_rendered": true,
+      "multiview_validated": false,
+      "renders": [
+        {
+          "camera": "hero",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_001/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_001",
+            "--camera",
+            "hero",
+            "--frame",
+            "18",
+            "--render"
+          ],
+          "returncode": 0,
+          "seconds": 29.732309,
+          "timeout_seconds": 180
+        },
+        {
+          "camera": "side",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_001/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_001",
+            "--camera",
+            "side",
+            "--frame",
+            "18",
+            "--render",
+            "--no-export"
+          ],
+          "returncode": 0,
+          "seconds": 31.957735,
+          "timeout_seconds": 180
+        },
+        {
+          "camera": "top",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_001/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_001",
+            "--camera",
+            "top",
+            "--frame",
+            "18",
+            "--render",
+            "--no-export"
+          ],
+          "returncode": 0,
+          "seconds": 27.47608,
+          "timeout_seconds": 180
+        }
+      ],
+      "review_sha256": "7d112c8a1c4451f4c765d4ebb1165298c55cf2bcef36c88da1110d0fceb2eba1",
+      "review_status": "revise",
+      "spec_sha256": "8518d841be3f030b9757363177cc28234c26d4daa012b8dd9eebb667e795338b",
+      "started_at": "2026-10-11T12:39:58.896603+00:00",
+      "status": "reviewed"
+    },
+    {
+      "artifact_sha256": {
+        "hero.png": "f0bfc3f79adc9395f8a680e789a89c7f0ffefd3179c5c270674a4aa887e5db0e",
+        "manifest_hero.json": "a7b9021b61c51a8f38090961e5eda88f2f10016f07b80de00b59f80d0e73d69e",
+        "manifest_side.json": "6bc1f13e34428378bcab52f6a4b5d86edcb4576817e42e58d7958382221a7857",
+        "manifest_top.json": "230df2276fbfc3c7181b059e8e4ad1f6a9a6c1f4e1fa960b564eca77854b9c09",
+        "scene.blend": "e2f6dfedaf6b43f7b7aaaf97d7216ad498273214da3570bafde2345de890f826",
+        "scene.glb": "ccb1c21ef0bdb1810ed25388f5bbb1adf128733b49d22eccdf0492bc137c2a02",
+        "scene_manifest.json": "a7b9021b61c51a8f38090961e5eda88f2f10016f07b80de00b59f80d0e73d69e",
+        "side.png": "73275d38a7d32bcd7739206972b3acf9f12daa3d4390dc80333ce8c23bf7e3d7",
+        "top.png": "abc8e7e68ae441aceb67d05147413af244e8e13304ff74f9d03bdf174e71ca6f"
+      },
+      "directory": "iteration_002",
+      "finished_at": "2026-10-11T12:48:20.422586+00:00",
+      "image_sha256": "f0bfc3f79adc9395f8a680e789a89c7f0ffefd3179c5c270674a4aa887e5db0e",
+      "images_sha256": {
+        "hero": "f0bfc3f79adc9395f8a680e789a89c7f0ffefd3179c5c270674a4aa887e5db0e",
+        "side": "73275d38a7d32bcd7739206972b3acf9f12daa3d4390dc80333ce8c23bf7e3d7",
+        "top": "abc8e7e68ae441aceb67d05147413af244e8e13304ff74f9d03bdf174e71ca6f"
+      },
+      "iteration": 2,
+      "multiview_rendered": true,
+      "multiview_validated": false,
+      "renders": [
+        {
+          "camera": "hero",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_002/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_002",
+            "--camera",
+            "hero",
+            "--frame",
+            "18",
+            "--render"
+          ],
+          "returncode": 0,
+          "seconds": 80.105202,
+          "timeout_seconds": 180
+        },
+        {
+          "camera": "side",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_002/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_002",
+            "--camera",
+            "side",
+            "--frame",
+            "18",
+            "--render",
+            "--no-export"
+          ],
+          "returncode": 0,
+          "seconds": 74.024066,
+          "timeout_seconds": 180
+        },
+        {
+          "camera": "top",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_002/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_002",
+            "--camera",
+            "top",
+            "--frame",
+            "18",
+            "--render",
+            "--no-export"
+          ],
+          "returncode": 0,
+          "seconds": 71.025993,
+          "timeout_seconds": 180
+        }
+      ],
+      "review_sha256": "3d31df0244b61ca84a395fd92a7cfa552c70fb1d6ddc77a14f5f7be085a6cf94",
+      "review_status": "revise",
+      "spec_sha256": "7d71ab1187c37b7dae59cece65b1f75047631498d0b9c47534e228aa81533811",
+      "started_at": "2026-10-11T12:44:35.062606+00:00",
+      "status": "reviewed"
+    },
+    {
+      "artifact_sha256": {
+        "hero.png": "dfa99886c5afa8009fe41260b5ab3bf821301233bb584813af01a514d8126695",
+        "manifest_hero.json": "dc441fca16ce9d5b77660573b669f0373f7c7853fe4f0f3a8754ebeba9c54e03",
+        "manifest_side.json": "3f7e6718ae5d33891dcf8bbf25c22f895bbf1e1e6bca03ec3d9f64c7eb979478",
+        "manifest_top.json": "77a8eb690f17cc123f23689c9138255ee765b13224cd65d07749cbfa380aad6f",
+        "scene.blend": "2e4869a8784ae60119bd4cbc7f511e115e9bbe3faa9e8d77a53e00497a189d5f",
+        "scene.glb": "60a63a2f10b4bed817f6018218f92ecea186b7cf88281f6cbcb2122a997af23a",
+        "scene_manifest.json": "dc441fca16ce9d5b77660573b669f0373f7c7853fe4f0f3a8754ebeba9c54e03",
+        "side.png": "bd87f46000946ab72256eee62e8d0b8d11f21b573bbe8ae7df749fcf25584a2c",
+        "top.png": "abaff1ee05e5a0e3f9be350b297fdf2e1a9d381dbd3701a1a49d2a52d37ce6b9"
+      },
+      "directory": "iteration_003",
+      "finished_at": "2026-10-11T12:53:18.708999+00:00",
+      "image_sha256": "dfa99886c5afa8009fe41260b5ab3bf821301233bb584813af01a514d8126695",
+      "images_sha256": {
+        "hero": "dfa99886c5afa8009fe41260b5ab3bf821301233bb584813af01a514d8126695",
+        "side": "bd87f46000946ab72256eee62e8d0b8d11f21b573bbe8ae7df749fcf25584a2c",
+        "top": "abaff1ee05e5a0e3f9be350b297fdf2e1a9d381dbd3701a1a49d2a52d37ce6b9"
+      },
+      "iteration": 3,
+      "multiview_rendered": true,
+      "multiview_validated": false,
+      "renders": [
+        {
+          "camera": "hero",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_003/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_003",
+            "--camera",
+            "hero",
+            "--frame",
+            "18",
+            "--render",
+            "--linear-pass"
+          ],
+          "returncode": 0,
+          "seconds": 67.576579,
+          "timeout_seconds": 180
+        },
+        {
+          "camera": "side",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_003/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_003",
+            "--camera",
+            "side",
+            "--frame",
+            "18",
+            "--render",
+            "--linear-pass",
+            "--no-export"
+          ],
+          "returncode": 0,
+          "seconds": 68.962068,
+          "timeout_seconds": 180
+        },
+        {
+          "camera": "top",
+          "command": [
+            "blender",
+            "-b",
+            "-t",
+            "4",
+            "-P",
+            "/workspace/shared/cg_studio/scripts/build_scene.py",
+            "--",
+            "--spec",
+            "/workspace/shared/cg_studio/runs/gated/iteration_003/spec.json",
+            "--out",
+            "/workspace/shared/cg_studio/runs/gated/iteration_003",
+            "--camera",
+            "top",
+            "--frame",
+            "18",
+            "--render",
+            "--linear-pass",
+            "--no-export"
+          ],
+          "returncode": 0,
+          "seconds": 62.013843,
+          "timeout_seconds": 180
+        }
+      ],
+      "review_sha256": "293d0db3457a0539bf979f3b94cf378901ee4ec3cce5bf2c5ee3491ffec4b8d3",
+      "review_status": "rejected",
+      "spec_sha256": "ea35b88c3b79ba7a1c40413bf82f24a3f7c087e32891043653865c5526d7d9a5",
+      "started_at": "2026-10-11T12:50:00.027582+00:00",
+      "status": "reviewed"
+    }
+  ],
+  "limits": {
+    "max_iterations": 3,
+    "paid_usd": 0,
+    "render_seconds": 180,
+    "total_seconds": 1800
+  },
+  "paid_usd_spent": 0.0,
+  "run_id": "fec70b31-3218-4280-ae88-eddc166c8229",
+  "schema_version": 1,
+  "status": "rejected",
+  "stop_reason": "Final bounded look attempt: all three raw Cycles images and all three separately labeled HDR color-only OIDN versions were inspected. Geometry/thickness, shaped metal reflections, grounded support and reduced pale wash improved. However the hero stream loses visibility through a substantial middle section above the cup, so continuous pouring is not reliably readable. Darkening also suppresses some vessel/free-surface information; side remains dominated by bright reflected patches. This is a useful working CG prototype, not an accepted final beauty shot. Stop this run after three attempts; no fourth render is approved by this review. The review binds the raw three-view outputs, and qa/final_visual_review.json separately records denoised artifact hashes. No reference-photo match, GPU performance, browser appearance parity, fluid simulation, or final-film temporal quality is claimed.",
+  "updated_at": "2026-10-11T12:55:49.667100+00:00"
+}

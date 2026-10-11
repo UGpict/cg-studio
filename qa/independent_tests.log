@@ -1,0 +1,30 @@
+test_limits_reject_expansion_and_paid_work (test_pipeline.BudgetTests.test_limits_reject_expansion_and_paid_work) ... ok
+test_remaining_budget_is_minimum (test_pipeline.BudgetTests.test_remaining_budget_is_minimum) ... ok
+test_timeout_kills_descendant_processes (test_pipeline.BudgetTests.test_timeout_kills_descendant_processes) ... ok
+test_acceptance_requires_exact_evidence_then_stops (test_pipeline.PipelineTests.test_acceptance_requires_exact_evidence_then_stops) ... ok
+test_blender_command_keeps_arguments_separate (test_pipeline.PipelineTests.test_blender_command_keeps_arguments_separate) ... ok
+test_cli_cannot_expand_spec_budget (test_pipeline.PipelineTests.test_cli_cannot_expand_spec_budget) ... ok
+test_cli_validate_and_status (test_pipeline.PipelineTests.test_cli_validate_and_status) ... ok
+test_evidence_changed_after_render_cannot_accept (test_pipeline.PipelineTests.test_evidence_changed_after_render_cannot_accept) ... ok
+test_existing_run_cannot_be_overwritten (test_pipeline.PipelineTests.test_existing_run_cannot_be_overwritten) ... ok
+test_lock_blocks_concurrent_run (test_pipeline.PipelineTests.test_lock_blocks_concurrent_run) ... ok
+test_patch_rejects_code_camera_budget_unknown_noop_and_bounds (test_pipeline.PipelineTests.test_patch_rejects_code_camera_budget_unknown_noop_and_bounds) ... ok
+test_rejected_review_is_terminal (test_pipeline.PipelineTests.test_rejected_review_is_terminal) ... ok
+test_render_stops_pending_without_vision (test_pipeline.PipelineTests.test_render_stops_pending_without_vision) ... ok
+test_renderer_deadline_kills_and_does_not_start_next_camera (test_pipeline.PipelineTests.test_renderer_deadline_kills_and_does_not_start_next_camera) ... ok
+test_renderer_failure_records_terminal_state (test_pipeline.PipelineTests.test_renderer_failure_records_terminal_state) ... ok
+test_reviews_cannot_replay_or_mismatch_hashes (test_pipeline.PipelineTests.test_reviews_cannot_replay_or_mismatch_hashes) ... ok
+test_revision_applies_only_approved_parameters (test_pipeline.PipelineTests.test_revision_applies_only_approved_parameters) ... ok
+test_shorter_spec_budget_is_honored (test_pipeline.PipelineTests.test_shorter_spec_budget_is_honored) ... ok
+test_spec_changed_after_render_cannot_accept (test_pipeline.PipelineTests.test_spec_changed_after_render_cannot_accept) ... ok
+test_spec_rejects_unknown_nonfinite_boolean_and_geometry (test_pipeline.PipelineTests.test_spec_rejects_unknown_nonfinite_boolean_and_geometry) ... ok
+test_spec_validates_actual_example (test_pipeline.PipelineTests.test_spec_validates_actual_example) ... ok
+test_strict_json_rejects_duplicate_keys (test_pipeline.PipelineTests.test_strict_json_rejects_duplicate_keys) ... ok
+test_three_iteration_ceiling_is_absolute (test_pipeline.PipelineTests.test_three_iteration_ceiling_is_absolute) ... ok
+test_total_budget_clips_renderer_timeout (test_pipeline.PipelineTests.test_total_budget_clips_renderer_timeout) ... ok
+test_uninspected_and_blocking_reviews_cannot_accept (test_pipeline.PipelineTests.test_uninspected_and_blocking_reviews_cannot_accept) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 4.594s
+
+OK

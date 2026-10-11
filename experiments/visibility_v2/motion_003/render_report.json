@@ -1,0 +1,160 @@
+{
+  "frames": [
+    {
+      "frame": 1,
+      "seconds": 4.885084472000017
+    },
+    {
+      "frame": 2,
+      "seconds": 4.7702258650006115
+    },
+    {
+      "frame": 3,
+      "seconds": 4.46822739900017
+    },
+    {
+      "frame": 4,
+      "seconds": 4.546918937001465
+    },
+    {
+      "frame": 5,
+      "seconds": 4.478932046000409
+    },
+    {
+      "frame": 6,
+      "seconds": 4.678198891000648
+    },
+    {
+      "frame": 7,
+      "seconds": 4.702661494000495
+    },
+    {
+      "frame": 8,
+      "seconds": 4.64681909400133
+    },
+    {
+      "frame": 9,
+      "seconds": 4.665395762998742
+    },
+    {
+      "frame": 10,
+      "seconds": 6.180678214999716
+    },
+    {
+      "frame": 11,
+      "seconds": 4.87684170600005
+    },
+    {
+      "frame": 12,
+      "seconds": 4.145440079000764
+    },
+    {
+      "frame": 13,
+      "seconds": 4.020277462999729
+    },
+    {
+      "frame": 14,
+      "seconds": 4.0351448970013735
+    },
+    {
+      "frame": 15,
+      "seconds": 4.157278086000588
+    },
+    {
+      "frame": 16,
+      "seconds": 4.317783746000714
+    },
+    {
+      "frame": 17,
+      "seconds": 4.190838471000461
+    },
+    {
+      "frame": 18,
+      "seconds": 4.446130930000436
+    },
+    {
+      "frame": 19,
+      "seconds": 4.919746943000064
+    },
+    {
+      "frame": 20,
+      "seconds": 4.666634062001322
+    },
+    {
+      "frame": 21,
+      "seconds": 5.765439556000274
+    },
+    {
+      "frame": 22,
+      "seconds": 5.034578968999995
+    },
+    {
+      "frame": 23,
+      "seconds": 4.897216657000172
+    },
+    {
+      "frame": 24,
+      "seconds": 5.608300371000951
+    },
+    {
+      "frame": 25,
+      "seconds": 5.243420013001014
+    },
+    {
+      "frame": 26,
+      "seconds": 4.916675914000734
+    },
+    {
+      "frame": 27,
+      "seconds": 4.935688544999721
+    },
+    {
+      "frame": 28,
+      "seconds": 4.3956031299985625
+    },
+    {
+      "frame": 29,
+      "seconds": 5.075664041998607
+    },
+    {
+      "frame": 30,
+      "seconds": 4.142134002999228
+    },
+    {
+      "frame": 31,
+      "seconds": 4.212442702999397
+    },
+    {
+      "frame": 32,
+      "seconds": 4.458165361000283
+    },
+    {
+      "frame": 33,
+      "seconds": 5.221510383998975
+    },
+    {
+      "frame": 34,
+      "seconds": 5.069860089999565
+    },
+    {
+      "frame": 35,
+      "seconds": 5.503065083001275
+    },
+    {
+      "frame": 36,
+      "seconds": 5.018731393000053
+    }
+  ],
+  "animation_mode": "art-directed shape-key inputs with live Boolean-unified resin volume; evaluated topology changes",
+  "fluid_simulation": false,
+  "evaluated_topology_can_change": true,
+  "temporal_denoising": false,
+  "denoising": "color-only OIDN HDR",
+  "display_transform": "AgX",
+  "look": "None",
+  "exposure": 0.0,
+  "width": 384,
+  "height": 384,
+  "samples": 16,
+  "fps": 12
+}

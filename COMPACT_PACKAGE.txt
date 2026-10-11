@@ -1,0 +1,19 @@
+Runnable compact source and curated assets from commit 1ad84af87741e7feb152cb3dade1489e4656f0fd.
+All code/tests and accepted prototype outputs are included.
+Historical raw PNGs/contact sheets and Git history are omitted for attachment size.
+The full Source Checkpoint in Library retains every file and Git history.
+Manual publish works WITHOUT the bundle:
+  bash scripts/publish_manual.sh --source . ../cg-studio-publish
+Run yourself after authenticating Git. No force push or main update.
+
+Omitted historical images:
+qa/motion_inspection/frames_01_06.png
+qa/motion_inspection/frames_07_12.png
+qa/motion_inspection/frames_13_18.png
+qa/motion_inspection/frames_19_24.png
+qa/motion_inspection/frames_25_30.png
+qa/motion_inspection/frames_31_36.png
+samples/hero_initial_raw.png
+samples/hero_iteration_003_raw.png
+samples/side_iteration_003_raw.png
+samples/top_iteration_003_raw.png

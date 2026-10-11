@@ -1,0 +1,31 @@
+{
+  "stage": "hero_denoising_comparison",
+  "scope": "Actual raw comparator and denoised hero pixels viewed at 640x640, same display transform per metadata.",
+  "review_state": "improved_preview_not_final_beauty_acceptance",
+  "method": "Intel Open Image Denoise RT, HDR, color-only",
+  "auxiliary_passes": [],
+  "temporal_denoising": false,
+  "images": {
+    "raw": {
+      "path": "/workspace/shared/cg_studio/runs/final/hero_linear_color_only_oidn_raw_display.png",
+      "sha256": "1e36a55fc634ffca1ea1d14b66d9830bd1339e1c183f2c6891e2dc6564b7a5c7",
+      "actual_pixels_inspected": true
+    },
+    "denoised": {
+      "path": "/workspace/shared/cg_studio/runs/final/hero_linear_color_only_oidn.png",
+      "sha256": "cb1bce99e9fe5f2c207d0c7418912fb45f03817368ba05e167dbe512ac9ff6c9",
+      "actual_pixels_inspected": true
+    }
+  },
+  "observations": [
+    "Grain is substantially suppressed; rim, vessel base and metal edges remain well defined.",
+    "The stream is not erased by denoising, but its middle section remains weak-contrast.",
+    "Some fine receiving-surface detail is softened; transparent interfaces look smoother.",
+    "The pale lower fill still reads more solid/opaque than intended clear-resin presentation."
+  ],
+  "limitations": [
+    "Only the hero view was denoised and reviewed at this stage.",
+    "A single-frame denoiser does not establish temporal stability.",
+    "No reference photograph was inspected."
+  ]
+}

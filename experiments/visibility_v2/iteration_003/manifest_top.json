@@ -1,0 +1,190 @@
+{
+  "builder_sha256": "0a0e4f052c57157713b242573c21d8a7e60cde2024604f66055e3cbe9e685b3e",
+  "spec_file_sha256": "274b8519c0ce36be90a55dea17897a793f97b0e4d9c095ba38f13d34bd763c08",
+  "blender_version": "4.3.2",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "denoise": false,
+  "samples": 96,
+  "seed": 42,
+  "camera": "top",
+  "frame": 18,
+  "animation_mode": "shape-key driven inputs with live Boolean-unified resin volume; not a fluid simulation",
+  "fluid_simulation": false,
+  "spec": {
+    "animation": {
+      "fill_end": 1.32,
+      "fill_start": 0.62,
+      "fps": 12,
+      "frames": 36,
+      "hero_frame": 18,
+      "mode": "art_directed_fixed_topology"
+    },
+    "brief": "Clear resin pours continuously into a thick transparent vessel. Show believable thickness, refraction, a visible free surface, soft grounded shadows and a metal witness object.",
+    "budget": {
+      "max_iterations": 3,
+      "max_paid_cost_usd": 0,
+      "per_render_seconds": 180,
+      "total_seconds": 1800
+    },
+    "cameras": {
+      "hero": {
+        "ortho_scale": 4.7,
+        "position": [
+          5.2,
+          -7.5,
+          4.4
+        ],
+        "target": [
+          0,
+          0,
+          1.35
+        ]
+      },
+      "side": {
+        "ortho_scale": 4.7,
+        "position": [
+          4.8,
+          -8.5,
+          2.65
+        ],
+        "target": [
+          0,
+          0,
+          1.35
+        ]
+      },
+      "top": {
+        "ortho_scale": 4.7,
+        "position": [
+          3.7,
+          -5.5,
+          7.0
+        ],
+        "target": [
+          0,
+          0,
+          1.2
+        ]
+      }
+    },
+    "cup": {
+      "base_thickness": 0.13,
+      "height": 1.65,
+      "ior": 1.46,
+      "outer_radius": 1.0,
+      "roughness": 0.025,
+      "wall_thickness": 0.065
+    },
+    "lighting": {
+      "exposure": 0.0,
+      "fill_energy": 60,
+      "key_energy": 180,
+      "rim_energy": 500,
+      "stream_energy": 500,
+      "stream_size": 0.35,
+      "world_strength": 0.16
+    },
+    "liquid": {
+      "absorption_color": [
+        0.94,
+        0.99,
+        1.0
+      ],
+      "absorption_density": 0.06,
+      "cloudiness": 0.0,
+      "fill_height": 0.96,
+      "ior": 1.49,
+      "meniscus_height": 0.032,
+      "roughness": 0.018,
+      "stream_radius": 0.09,
+      "stream_top": 2.8,
+      "transmission": 1.0
+    },
+    "project": "clear-resin-pour",
+    "render": {
+      "denoise": false,
+      "device": "CPU",
+      "engine": "CYCLES",
+      "height": 640,
+      "samples": 96,
+      "seed": 42,
+      "transparent": false,
+      "width": 640
+    },
+    "schema_version": 1,
+    "stage": {
+      "card_value": 0.08,
+      "card_width": 1.0,
+      "ground_value": 0.35
+    }
+  },
+  "objects": [
+    {
+      "name": "Cup | closed wall and base",
+      "type": "MESH"
+    },
+    {
+      "name": "Resin | closed fill volume and meniscus",
+      "type": "MESH"
+    },
+    {
+      "name": "Resin | continuous art-directed stream",
+      "type": "MESH"
+    },
+    {
+      "name": "Feed nozzle | real hollow steel",
+      "type": "MESH"
+    },
+    {
+      "name": "Feed tube | extends outside frame",
+      "type": "MESH"
+    },
+    {
+      "name": "Metal witness | cylinder",
+      "type": "MESH"
+    },
+    {
+      "name": "Studio ground",
+      "type": "MESH"
+    },
+    {
+      "name": "Key softbox",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Cool fill",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Left vertical reflection strip",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Right vertical reflection strip",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Camera_hero",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_side",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_top",
+      "type": "CAMERA"
+    }
+  ],
+  "limitations": [
+    "Art-directed fixed-topology pour; not a fluid simulation",
+    "No denoising by default on this CPU build",
+    "GLB optics differ from Cycles; volumetric scattering does not transfer",
+    "Evaluated Boolean topology may change during animation; no fixed-topology GLB equivalence claim."
+  ],
+  "render_seconds": 92.57489440400059,
+  "linear_color_pass": "/workspace/shared/cg_studio/experiments/visibility_v2/iteration_003/top_linear.pfm",
+  "auxiliary_passes": "not yet exported; external OIDN color-only is explicitly labeled",
+  "elapsed_seconds": 93.39705086499998
+}

@@ -1,0 +1,59 @@
+{
+  "approved_parameter_patch": {
+    "stage.card_width": 1.0,
+    "stage.card_value": 0.08,
+    "stage.ground_value": 0.05,
+    "lighting.key_energy": 300,
+    "lighting.fill_energy": 100,
+    "lighting.rim_energy": 500,
+    "lighting.world_strength": 0.08,
+    "lighting.stream_energy": 200
+  },
+  "image_sha256": "f0bfc3f79adc9395f8a680e789a89c7f0ffefd3179c5c270674a4aa887e5db0e",
+  "images_sha256": {
+    "hero": "f0bfc3f79adc9395f8a680e789a89c7f0ffefd3179c5c270674a4aa887e5db0e",
+    "side": "73275d38a7d32bcd7739206972b3acf9f12daa3d4390dc80333ce8c23bf7e3d7",
+    "top": "abc8e7e68ae441aceb67d05147413af244e8e13304ff74f9d03bdf174e71ca6f"
+  },
+  "issues": [
+    {
+      "priority": "P1",
+      "category": "material",
+      "observation": "MaterialLighting: hero lower resin remains a broad pale solid-looking band; side has dominant bright patches rather than consistently readable clear fill.",
+      "requested_change": "Use a narrower darker witness card, darker ground and reduced broad illumination. Check that transmitted/refracted content and the free surface remain distinct in all views."
+    },
+    {
+      "priority": "P1",
+      "category": "lighting",
+      "observation": "MaterialLighting: the hero upper stream remains low-contrast although side-view reflection continuity has improved.",
+      "requested_change": "Balance the stream reflection strip against the darker set. In the next images verify nozzle-to-impact visibility rather than inferring it from the lighting values."
+    },
+    {
+      "priority": "P1",
+      "category": "geometry",
+      "observation": "Modeling source audit: the thicker .09-radius stream exceeds the old fixed .072 nozzle exit radius; shrinking the card alone would leave its fixed-position markers beyond its edges.",
+      "requested_change": "Producer source revision must derive nozzle bore clearance from stream radius and keep witness markers within the card. Record source identity so this geometry change is traceable."
+    },
+    {
+      "priority": "P2",
+      "category": "other",
+      "observation": "Render: native-size grain persists in all raw images. A separately inspected HDR color-only OIDN hero reduced grain but softened fine surface detail.",
+      "requested_change": "Retain raw images and create separately labeled same-transform denoised outputs for every final view. Inspect thin stream/meniscus detail without presenting denoising as physical validation."
+    }
+  ],
+  "iteration": 2,
+  "reviewer": {
+    "image_inspected": true,
+    "inspected_cameras": [
+      "hero",
+      "side",
+      "top"
+    ],
+    "kind": "vision_model",
+    "name": "Independent CG Studio visual reviewer"
+  },
+  "run_id": "fec70b31-3218-4280-ae88-eddc166c8229",
+  "spec_sha256": "7d71ab1187c37b7dae59cece65b1f75047631498d0b9c47534e228aa81533811",
+  "status": "revise",
+  "summary": "Actual hero, side and top pixels of iteration 002 were inspected at 640x640. Compared with iteration 001, rim/base contours and material reflections are clearer and side-view stream visibility improves. Top still shows a distinct liquid free surface. Hero lower fill nevertheless appears pale and solid-like, while part of the upper stream remains weak-contrast. Raw images still carry grain. Approve one final bounded lighting/background experiment, with no promise of beauty acceptance. The producer is also correcting nozzle-bore clearance and marker placement in source; this is a look-development revision, not a parameter-only controlled benchmark. No photographic reference agreement or browser parity is claimed."
+}

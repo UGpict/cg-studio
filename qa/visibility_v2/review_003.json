@@ -1,0 +1,115 @@
+{
+  "candidate": "visibility_v2/003",
+  "decision": "accepted_for_three_view_still_scope",
+  "reviewed_at": "2026-10-11T13:20:34.181095+00:00",
+  "reviewer": "Independent image-capable CG Studio reviewer",
+  "scope": "640x640 hero/side/top at frame 18. Actual raw Cycles and separately labeled HDR color-only OIDN images inspected. Acceptance covers the clear-pour diagnostic still-look cues, not arbitrary scene generation, calibrated physical accuracy, final-film temporal quality, or GLB parity.",
+  "builder_sha256": "0a0e4f052c57157713b242573c21d8a7e60cde2024604f66055e3cbe9e685b3e",
+  "images": {
+    "hero_raw": {
+      "path": "experiments/visibility_v2/iteration_003/hero.png",
+      "sha256": "7581ea4bf0f8eff6fc9fa00aa178ec6147c4f9567ae480d9bfc55c2a84e7867e",
+      "actual_pixels_inspected": true
+    },
+    "hero_oidn_color_only": {
+      "path": "experiments/visibility_v2/iteration_003/hero_linear_color_only_oidn.png",
+      "sha256": "1b09d200f4060003a0f636fd3fa0cda5b951924d0bfd5495f01c9b06c50c6b8b",
+      "actual_pixels_inspected": true
+    },
+    "side_raw": {
+      "path": "experiments/visibility_v2/iteration_003/side.png",
+      "sha256": "b9036d6433c12fe03db220a407af71f55c33a86cd8ef83a12acc895eeeeecba3",
+      "actual_pixels_inspected": true
+    },
+    "side_oidn_color_only": {
+      "path": "experiments/visibility_v2/iteration_003/side_linear_color_only_oidn.png",
+      "sha256": "31fe5adaca61b57811fef4d088bc32d29dfba3f5f2b38d11a1543c4edd4b0fb5",
+      "actual_pixels_inspected": true
+    },
+    "top_raw": {
+      "path": "experiments/visibility_v2/iteration_003/top.png",
+      "sha256": "5a2d1fcc5a2a7d930b37deb51183df19bdc85a4df97bb6f36e0497c0e8141a51",
+      "actual_pixels_inspected": true
+    },
+    "top_oidn_color_only": {
+      "path": "experiments/visibility_v2/iteration_003/top_linear_color_only_oidn.png",
+      "sha256": "e6e468d462cac7bf8b77f4983a6d18e076c74b5231fac18285679d7467855448",
+      "actual_pixels_inspected": true
+    }
+  },
+  "criteria": [
+    {
+      "criterion": "continuous_stream",
+      "status": "pass",
+      "observation": "Stream has visible edge/reflection contrast from the supported feed source to impact in all three views."
+    },
+    {
+      "criterion": "connected_free_surface",
+      "status": "pass",
+      "observation": "The receiving surface is planar/elliptical in perspective with bounded edge curvature; it connects to the stream without an isolated terminal nub."
+    },
+    {
+      "criterion": "vessel_thickness",
+      "status": "pass",
+      "observation": "Finite cup wall/rim/base cues remain legible, with coherent straighter wall reflections."
+    },
+    {
+      "criterion": "clear_volume_readability",
+      "status": "pass",
+      "observation": "Fill reads as one continuous region within the vessel; earlier broad black bands and bulb/stacked-insert cues are removed. Neutral lower tone is consistent with the featureless studio ground; it is not treated as proof of opacity."
+    },
+    {
+      "criterion": "material_and_grounding",
+      "status": "pass",
+      "observation": "Glass-like boundary reflections/transmission cues remain distinct from the opaque reflective metal witness; both have grounded shadow/contact cues."
+    },
+    {
+      "criterion": "bloom_and_wash",
+      "status": "pass",
+      "observation": "No excessive bloom, broad milky wash or uncontrolled clipped-white presentation is apparent."
+    }
+  ],
+  "resolved_findings": [
+    "MVP VIS-003 disappearing upper stream",
+    "V2-INTERFACE broad black horizontal fill bands",
+    "V2-SHADING exaggerated bulb-like wall/free-surface appearance",
+    "V2-IMPACT isolated bright impact nub"
+  ],
+  "remaining_nonblocking_findings": [
+    {
+      "id": "V2-NOISE",
+      "priority": "P2",
+      "owner": "Render",
+      "observation": "Raw 96-sample images remain grainy. Color-only OIDN removes most grain while softening some fine transparent detail.",
+      "acceptance_check": "Keep raw/cleaned outputs separate and inspect actual final-look motion for temporal stability before any final-film claim."
+    },
+    {
+      "id": "V2-BACKGROUND",
+      "priority": "P2",
+      "owner": "MaterialLighting",
+      "observation": "Featureless neutral background limits how strongly refracted background detail can be demonstrated.",
+      "acceptance_check": "For a future quantitative or exact-reference optical test, use an explicitly defined background target and controlled capture; no such calibration is claimed now."
+    }
+  ],
+  "reference_comparison": {
+    "sources": [
+      "REF-01",
+      "REF-02"
+    ],
+    "result": "Qualitative continuity, clear-boundary and connected-impact cues are consistent with the inspected manufacturer photos.",
+    "limitations": "Different cup material/thickness, background, source and camera. No exact similarity score, material-constant inference or photographic match claim.",
+    "evidence": "qa/visibility_v2/reference_evidence.json"
+  },
+  "geometry_evidence": {
+    "file": "experiments/visibility_v2/iteration_003/all_frame_geometry_checks.json",
+    "observed_report": "All 36 evaluated frames are single-component/manifold/positive-volume with monotonically increasing resin volume.",
+    "limitation": "Source geometry evidence does not substitute for motion-pixel or fluid-physics validation."
+  },
+  "representation_limits": [
+    "Source retains shape-key inputs, but live Boolean evaluated resin topology changes.",
+    "Cycles interface model is intentionally renderer-specific. Equivalent GLB export is disabled for this candidate.",
+    "Do not silently replace the fixed-topology web asset with this offline result."
+  ],
+  "next_authorized_gate": "Root-authorized short final-look motion render and actual frame/playback review within the remaining 1200-second experiment budget.",
+  "final_director": "Root director retains final project and film acceptance."
+}

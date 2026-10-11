@@ -1,0 +1,71 @@
+{
+  "review_state": "motion_demonstration_only",
+  "scope": "Actual pixel inspection of all 36 sequential color-only OIDN PNGs in six native-size contact sheets, plus first/middle/last sheet. MP4 was not watched in a live video player.",
+  "format": {
+    "width": 384,
+    "height": 384,
+    "fps": 12,
+    "frames": 36,
+    "duration_seconds": 3,
+    "samples": 16
+  },
+  "observations": [
+    "The fill level rises gradually across the sequence.",
+    "The visible stream/impact region remains spatially continuous; upper stream contrast is weak throughout.",
+    "No missing/blank frame or gross vessel silhouette jump was apparent in the inspected sequence.",
+    "Lower-fill reflections change strongly around frames 28\u201332 as the level rises.",
+    "Fine transparent detail is softened by low-sample, color-only denoising."
+  ],
+  "checks": {
+    "producer_video_decode": "passed, per runs/motion_final/validation.json",
+    "producer_png_decode_count": 36,
+    "reviewer_actual_frame_pixels_inspected": 36,
+    "live_motion_playback_inspected": false,
+    "temporal_denoising": false,
+    "fluid_simulation": false
+  },
+  "limitations": [
+    "Frame-sheet inspection does not establish perceptual flicker-free playback or final-film temporal quality.",
+    "Preview predates later nozzle-bore/source and darker-look revisions; it must not be presented as the final still-look animation.",
+    "No photographic reference comparison."
+  ],
+  "source_hashes": {
+    "0001.png": "fd2fb4c42373a7fb50c9af89d9158f0ddf5badf439bd87aaa4ec81a46cd9867e",
+    "0002.png": "55d4f3792d87db8f7531cf3e3b7afcc977a74bb8719698fb28e6a3fa886489d8",
+    "0003.png": "b0f9f4089152b6c3d2a091e085b35bf74b128a52d323ca5a0a060f4e03fc2556",
+    "0004.png": "1c2077e2d41b8351c3c7b71a54a380c344494540cfaddc43c343767bdb0a6f05",
+    "0005.png": "04130c8c720c6d301df2f825de13200f24d3d83259331837aadd93d94dc0c798",
+    "0006.png": "a85129b7b0ae73643404131373cce7e76edb1446794f2afbfcac564d2ab63b31",
+    "0007.png": "802fd47b3c3431ce0dbf2cbc31ccd305a226a2ab45da1f38a784d2a2d2724875",
+    "0008.png": "84396f119b3a0917e1bc6c77a5bcf3e689fd058c67da91d99ddb639eb29e0f7e",
+    "0009.png": "0dad3380c6852032e9726f922702cb61df476f909ca3724fb80a16eb182f34b6",
+    "0010.png": "d152950f607aa68a17c6e03b6d277f40d04f9e479ab2276fdd01002ef6bd6a23",
+    "0011.png": "9cf6bed10d340b42e83c96e7856bbc93f2c0495068c3bfe55dc09907bf28292f",
+    "0012.png": "1b920046195d6c530a1ed875bc7979152c3611cd4dee536cf583abdc1cc37f56",
+    "0013.png": "82cecec2b6d26e9a8bf82b4c505bc8cd5a38615dfd4f8502f201aa4e43a531cf",
+    "0014.png": "703e0b79234a09906bcd4d870461ea75ee0bd2d2cc3cd6ce8ddf3b93d11c8f91",
+    "0015.png": "13a1dcbc4b3044306f4bc9021fd5e5b2e982dab2c672f54889ebc44344f7ada3",
+    "0016.png": "ab016ec7955ae636904344ba6f6c707997ed6eca1f9d4f984f02b12e66fdfa0f",
+    "0017.png": "a1b534e06d20048b356bab28f6f030f9ee4fc2dd3440cf5e69544c152f18598c",
+    "0018.png": "a4080018fee12e047f5916600668c6f3717babec7e6b6c96ddb12c21fac99579",
+    "0019.png": "4df44b369bcd4f2ad137312d9fad5be9de7621f97f2dc0d01c4f062b48cc72b6",
+    "0020.png": "c044db83fcebc88d9d66fca72cbdc8bed973f19f525a1322a9b177d1da74f2ce",
+    "0021.png": "b3e6843ba84f60b9e99136a2567b9e71c4122ba5dda7570a5dabef49e4d224a2",
+    "0022.png": "ec1953866e4e9d8eefa1679d2df825231c0f1c74a137b4f8965d0e38ace0bfbc",
+    "0023.png": "8c2cd069a8080c2423ecc18c34d2cc0e9ee6cb0195e43c84552786db29290981",
+    "0024.png": "425f1d60bbb999a054228f5bce71bfbbc6d91d2e6fe9503ec0416bcadc95ee86",
+    "0025.png": "b435249f23c0e78bfe89b20a498645ed934ce1aafd97f12e8a1172ec6da26c2b",
+    "0026.png": "13ec627d5fc201e6caeb2b5e97b4137e94e14d019ed011440e4ccda14a5cdd58",
+    "0027.png": "ce81d4eb65199de95301b111187ecdebc6c34cdc8822f64317dbfd42096dade1",
+    "0028.png": "8ceac508923bb3ebfc23a09c02deec5f9b62791badfd1b3550ce6553b32483dc",
+    "0029.png": "2ba96979ac6d214c29822946f9fedc7314b873fb54c3b5ea01ccb404a79b8ccc",
+    "0030.png": "169a177d8c9cf77c2fd5f3ee49b5b2ed2e8274d81edd3db42b7449f7c1f6b617",
+    "0031.png": "6ebd9372d3f143ea70ef939ae2676e9ee38fb634abf39800a89fcc1fcb8a9062",
+    "0032.png": "bd8756513a0246efff5358a7d04018f7e93d6e08e9d9b11212a5e0e6356e1cd9",
+    "0033.png": "cf487eed5bf6479fab90cdf94e1555e939712a03f280f95f2b32db66e9487cdf",
+    "0034.png": "0741d29e2f3d15ba4a184c1220ff267ca999e1838ac2145f39453804931c899e",
+    "0035.png": "4b7c1ade96b05e367ad1f6bf7799a74a08a4605063579509cbaa08ee8aa440b4",
+    "0036.png": "f912144ad26087cd8cb915c6d3701302e33a1e70e230995eba5eb45127059bf1"
+  },
+  "acceptance_check": "For final-film acceptance, render the chosen final look with the final geometry, inspect actual playback and neighboring frames, and verify stream legibility and temporal stability."
+}

@@ -1,0 +1,38 @@
+{
+  "method": "Intel Open Image Denoise RT, HDR, color-only",
+  "auxiliary_passes": [],
+  "temporal_denoising": false,
+  "input": "/workspace/shared/cg_studio/runs/gated/iteration_003/top_linear.pfm",
+  "input_sha256": "f15ba128b2a748d862d87994657f3276f2b2bbfdda529e3ff2afd865d2eafbd1",
+  "raw_preserved": true,
+  "denoised_pfm": "/workspace/shared/cg_studio/runs/gated/iteration_003/top_linear_color_only_oidn.pfm",
+  "denoised_png": "/workspace/shared/cg_studio/runs/gated/iteration_003/top_linear_color_only_oidn.png",
+  "raw_display_png": "/workspace/shared/cg_studio/runs/gated/iteration_003/top_linear_color_only_oidn_raw_display.png",
+  "same_display_transform_for_both": true,
+  "command": [
+    "/workspace/shared/tools/oidn-2.5.1.x86_64.linux/bin/oidnDenoise",
+    "--hdr",
+    "/workspace/shared/cg_studio/runs/gated/iteration_003/top_linear.pfm",
+    "--device",
+    "cpu",
+    "--threads",
+    "2",
+    "--affinity",
+    "0",
+    "-o",
+    "/workspace/shared/cg_studio/runs/gated/iteration_003/top_linear_color_only_oidn.pfm"
+  ],
+  "oidn_log": "Initializing device\n  device=CPU, version=2.5.1, msec=1.55337\nLoading input\nResolution: 640x640\nInitializing filter\n  filter=RT, msec=7.13263\n\nDenoising 0% \nDenoising 3% \nDenoising 7% \nDenoising 11% \nDenoising 14% \nDenoising 18% \nDenoising 22% \nDenoising 25% \nDenoising 29% \nDenoising 33% \nDenoising 37% \nDenoising 40% \nDenoising 44% \nDenoising 48% \nDenoising 51% \nDenoising 55% \nDenoising 59% \nDenoising 62% \nDenoising 66% \nDenoising 70% \nDenoising 74% \nDenoising 77% \nDenoising 81% \nDenoising 85% \nDenoising 88% \nDenoising 92% \nDenoising 96% \nDenoising 100% \n  msec=524.216\nSaving output\n",
+  "elapsed_seconds": 2.890048855999339,
+  "display_difference": {
+    "width": 640,
+    "height": 640,
+    "mean_absolute_difference_8bit": 4.641791178385417,
+    "maximum_channel_difference_8bit": 155
+  },
+  "limitations": [
+    "No albedo or normal auxiliary passes; fine transparent details may soften.",
+    "A visual noise-reduction pass is not validation of geometry or physical accuracy.",
+    "Single-frame filtering can cause temporal flicker."
+  ]
+}

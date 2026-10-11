@@ -1,0 +1,43 @@
+{
+  "purpose": "Qualitative real-world visual cues; not an exact reference-match score or material calibration.",
+  "copyright_handling": "Original images cached only for local pixel inspection and ignored by Git. Publish links and original review observations only; no redistribution license asserted.",
+  "sources": [
+    {
+      "id": "REF-01",
+      "publisher": "ArtResin",
+      "page_title": "How To Use Epoxy Resin",
+      "page_url": "https://www.artresin.com/blogs/artresin/artresin-101-how-to-artresin",
+      "image_url": "https://cdn.shopify.com/s/files/1/0770/0749/files/2measure_large.jpg?v=1508882254",
+      "image_sha256": "05e8cd91ffadc863f7c950cc9ba59805c90c16cc4689800cd56cb663552df007",
+      "actual_pixels_inspected": true,
+      "usable_cues": [
+        "Continuous clear stream entering a visible liquid surface.",
+        "Background markings/colors remain visible but distorted through cup and liquid.",
+        "Localized highlights distinguish boundaries without filling the entire liquid with uniform white.",
+        "Small connected impact disturbance on the free surface."
+      ],
+      "not_a_match_target_for": [
+        "Thick glass wall dimensions: reference is a different, thinner graduated cup.",
+        "Exact IOR, viscosity, scale, lighting power or quantitative optical accuracy.",
+        "Motion or temporal continuity: only one still was inspected."
+      ]
+    },
+    {
+      "id": "REF-02",
+      "publisher": "ArtResin",
+      "page_title": "How To Use Epoxy Resin",
+      "page_url": "https://www.artresin.com/blogs/artresin/artresin-101-how-to-artresin",
+      "image_url": "https://cdn.shopify.com/s/files/1/0770/0749/files/4pourspread_large.jpg?v=1508882265",
+      "image_sha256": "942d4ab0966f809ef4a4176a4d73de93c5225c2592ff46c9ebfce520c688942e",
+      "actual_pixels_inspected": true,
+      "usable_cues": [
+        "Thin continuous stream retains visible edge/highlight contrast over a varied background.",
+        "Stream meets a small raised connected impact region and a spreading transparent footprint."
+      ],
+      "not_a_match_target_for": [
+        "Vessel meniscus or glass/resin interface: this image pours onto flat artwork.",
+        "Exact camera composition, hardware nozzle, material parameters, or flow timing."
+      ]
+    }
+  ]
+}

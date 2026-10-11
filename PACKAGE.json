@@ -1,0 +1,20 @@
+{
+  "local_commit": "1ad84af87741e7feb152cb3dade1489e4656f0fd",
+  "source_files": 164,
+  "complete_source_files": 174,
+  "compact": true,
+  "remote_full_import": "blocked; PR branch currently only two config files",
+  "tests_passed": 103,
+  "omitted_historical_images": [
+    "qa/motion_inspection/frames_01_06.png",
+    "qa/motion_inspection/frames_07_12.png",
+    "qa/motion_inspection/frames_13_18.png",
+    "qa/motion_inspection/frames_19_24.png",
+    "qa/motion_inspection/frames_25_30.png",
+    "qa/motion_inspection/frames_31_36.png",
+    "samples/hero_initial_raw.png",
+    "samples/hero_iteration_003_raw.png",
+    "samples/side_iteration_003_raw.png",
+    "samples/top_iteration_003_raw.png"
+  ]
+}
