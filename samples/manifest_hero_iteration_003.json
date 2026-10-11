@@ -1,0 +1,202 @@
+{
+  "builder_sha256": "0fcbb956b0c43034fecc239a87e72633df0325f4bc965d10ce55305810b2dd11",
+  "spec_file_sha256": "ea35b88c3b79ba7a1c40413bf82f24a3f7c087e32891043653865c5526d7d9a5",
+  "blender_version": "4.3.2",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "denoise": false,
+  "samples": 96,
+  "seed": 42,
+  "camera": "hero",
+  "frame": 18,
+  "animation_mode": "art_directed_fixed_topology",
+  "fluid_simulation": false,
+  "spec": {
+    "animation": {
+      "fill_end": 1.32,
+      "fill_start": 0.62,
+      "fps": 12,
+      "frames": 36,
+      "hero_frame": 18,
+      "mode": "art_directed_fixed_topology"
+    },
+    "brief": "Clear resin pours continuously into a thick transparent vessel. Show believable thickness, refraction, a visible free surface, soft grounded shadows and a metal witness object.",
+    "budget": {
+      "max_iterations": 3,
+      "max_paid_cost_usd": 0,
+      "per_render_seconds": 180,
+      "total_seconds": 1800
+    },
+    "cameras": {
+      "hero": {
+        "ortho_scale": 4.7,
+        "position": [
+          5.2,
+          -7.5,
+          4.4
+        ],
+        "target": [
+          0,
+          0,
+          1.35
+        ]
+      },
+      "side": {
+        "ortho_scale": 4.7,
+        "position": [
+          4.8,
+          -8.5,
+          2.65
+        ],
+        "target": [
+          0,
+          0,
+          1.35
+        ]
+      },
+      "top": {
+        "ortho_scale": 4.7,
+        "position": [
+          3.7,
+          -5.5,
+          7.0
+        ],
+        "target": [
+          0,
+          0,
+          1.2
+        ]
+      }
+    },
+    "cup": {
+      "base_thickness": 0.13,
+      "height": 1.65,
+      "ior": 1.46,
+      "outer_radius": 1.0,
+      "roughness": 0.025,
+      "wall_thickness": 0.065
+    },
+    "lighting": {
+      "exposure": 0.0,
+      "fill_energy": 100,
+      "key_energy": 300,
+      "rim_energy": 500,
+      "stream_energy": 200,
+      "stream_size": 0.9,
+      "world_strength": 0.08
+    },
+    "liquid": {
+      "absorption_color": [
+        0.94,
+        0.99,
+        1.0
+      ],
+      "absorption_density": 0.06,
+      "cloudiness": 0.0,
+      "fill_height": 0.96,
+      "ior": 1.49,
+      "meniscus_height": 0.032,
+      "roughness": 0.018,
+      "stream_radius": 0.09,
+      "stream_top": 2.8,
+      "transmission": 1.0
+    },
+    "project": "clear-resin-pour",
+    "render": {
+      "denoise": false,
+      "device": "CPU",
+      "engine": "CYCLES",
+      "height": 640,
+      "samples": 96,
+      "seed": 42,
+      "transparent": false,
+      "width": 640
+    },
+    "schema_version": 1,
+    "stage": {
+      "card_value": 0.08,
+      "card_width": 1.0,
+      "ground_value": 0.05
+    }
+  },
+  "objects": [
+    {
+      "name": "Cup | closed wall and base",
+      "type": "MESH"
+    },
+    {
+      "name": "Resin | closed fill volume and meniscus",
+      "type": "MESH"
+    },
+    {
+      "name": "Resin | continuous art-directed stream",
+      "type": "MESH"
+    },
+    {
+      "name": "Feed nozzle | real hollow steel",
+      "type": "MESH"
+    },
+    {
+      "name": "Metal witness | cylinder",
+      "type": "MESH"
+    },
+    {
+      "name": "Studio ground",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction card",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction marker",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction marker.001",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction marker.002",
+      "type": "MESH"
+    },
+    {
+      "name": "Key softbox",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Cool fill",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Rim strip",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Stream reflection strip",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Camera_hero",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_side",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_top",
+      "type": "CAMERA"
+    }
+  ],
+  "limitations": [
+    "Art-directed fixed-topology pour; not a fluid simulation",
+    "No denoising by default on this CPU build",
+    "GLB optics differ from Cycles; volumetric scattering does not transfer"
+  ],
+  "glb_export": "success",
+  "render_seconds": 64.38986836699951,
+  "linear_color_pass": "/workspace/shared/cg_studio/runs/gated/iteration_003/hero_linear.pfm",
+  "auxiliary_passes": "not yet exported; external OIDN color-only is explicitly labeled",
+  "elapsed_seconds": 65.40482404999966
+}

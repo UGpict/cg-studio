@@ -1,0 +1,81 @@
+{
+  "scene": "/workspace/shared/cg_studio/experiments/visibility_v2/iteration_003/scene.blend",
+  "frames": {
+    "1": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264378224539642,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5113,
+        "faces": 5192,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.164794594372066,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "18": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377877826166,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5108,
+        "faces": 5188,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.9843064134905157,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    },
+    "36": {
+      "Cup | closed wall and base": {
+        "vertices": 1922,
+        "faces": 2048,
+        "nonmanifold_edges": 0,
+        "signed_volume": 1.1264377859420867,
+        "connected_components": 1,
+        "bounds_z": [
+          0.019999999552965164,
+          1.6549999713897705
+        ]
+      },
+      "Resin | closed fill volume and meniscus": {
+        "vertices": 5110,
+        "faces": 5191,
+        "nonmanifold_edges": 0,
+        "signed_volume": 2.9004098967564116,
+        "connected_components": 1,
+        "bounds_z": [
+          0.12849999964237213,
+          2.799999952316284
+        ]
+      }
+    }
+  },
+  "fluid_simulation": false,
+  "input_geometry": "shape keys",
+  "evaluated_geometry": "live Boolean union with potentially changing topology",
+  "checks_pass": true
+}

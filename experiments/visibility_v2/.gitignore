@@ -1,0 +1,7 @@
+# Reproducible working renders remain local; curated evidence/checkpoints are delivered separately.
+iteration_*/
+preflight_003/
+motion_003/
+*.zip
+*.log
+library_artifacts.json

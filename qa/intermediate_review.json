@@ -1,0 +1,35 @@
+{
+  "stage": "intermediate_128_samples",
+  "review_state": "changes_requested",
+  "scope": "Hero view only; no side/top intermediate evidence claimed.",
+  "image": {
+    "path": "/workspace/shared/cg_studio/runs/revised/hero.png",
+    "sha256": "7b155129623dee7d96819af0e1a54dba0646fdbffeb8e1a0c0cdd6c3afb91685",
+    "actual_pixels_inspected": true
+  },
+  "improvements": [
+    "Less grain than the 32-sample baseline.",
+    "Clearer rim, base edges, and metal witness."
+  ],
+  "remaining_findings": [
+    {
+      "id": "VIS-001",
+      "owner": "Render",
+      "priority": "P1",
+      "observation": "Grain remains clearly visible in the vessel and liquid; a controlled denoising test is justified."
+    },
+    {
+      "id": "VIS-002",
+      "owner": "MaterialLighting",
+      "priority": "P1",
+      "observation": "The pale lower fill still reads like an opaque insert or sleeve."
+    },
+    {
+      "id": "VIS-003",
+      "owner": "MaterialLighting",
+      "priority": "P1",
+      "observation": "Upper stream remains nearly invisible over part of the path."
+    }
+  ],
+  "next_gate": "Inspect raw and denoised final hero without conflating labels; confirm stream/meniscus are not erased. Then inspect all three final matched views."
+}

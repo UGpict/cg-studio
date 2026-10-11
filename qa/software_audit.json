@@ -1,0 +1,77 @@
+{
+  "scope": "Bounded local three-camera review loop, source inspection plus an independent unit-test run.",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "result": "passed",
+    "count": 25,
+    "duration_seconds": 4.594,
+    "log": "qa/independent_tests.log",
+    "renderer": "Explicit fake_blender.py test double; these tests are not Cycles visual validation."
+  },
+  "source_sha256": {
+    "cgstudio/spec.py": "76b505473b01e727c14f014e2ee1792f7c527b525ba8e06097b42a18cd4f70a5",
+    "cgstudio/io.py": "1cadd1a32d6b2d680bb947bdd5619f1a27dff5aee5d1f7cd3c5f3d8bf5e0d969",
+    "cgstudio/metrics.py": "86a5f2b9e040660ca1f1e0c7644b4654f64cac1b69d594a851cd7296b7c6db0d",
+    "cgstudio/review.py": "4cf86abe92fceeb9ab451ddd52f3cf294f7a872eac4c018ef979b13f10758473",
+    "cgstudio/budget.py": "5debb00ae81913efa1c61b1dee5e8b3150aaa330655655dd9acecc8dccc028f7",
+    "cgstudio/pipeline.py": "3795a0306ecfb2d57e2e0a1f4ce9be8a5cfad7c5ba7b228b6fea67e3ccc48366",
+    "cgstudio/__main__.py": "e935bd45379ef0a2b5cd08c1870d6df987afb2e1525048300f3c18a4ca802505",
+    "cgstudio/__init__.py": "d90697d0c61f0a1501394b2d0ad6b03c7c9b6c587b239daeddf989ced3015e5c",
+    "tests/test_pipeline.py": "953346ffdc97eebd74293ee4644f678325f198a8aa461cccd87b97f7f5d8f143"
+  },
+  "verified_controls": [
+    "Three required camera images, exact hashes, spec hash, artifact hashes, and review identity binding.",
+    "Review templates remain pending and cannot be submitted as acceptance.",
+    "A reviewer must attest actual inspection of hero, side, and top; unresolved P0/P1 issues cannot be accepted.",
+    "Only allowlisted bounded numeric scene parameters may be revised; arbitrary code, budget, camera, and unknown edits are rejected.",
+    "Maximum three iterations, per-render deadline, total active execution limit, and zero paid-service ceiling.",
+    "Timed-out renderer process group is killed, including tested descendant cleanup.",
+    "Run lock and fresh iteration folders prevent overlapping writes and silent overwrite.",
+    "Image measurements explicitly have no aesthetic or realism verdict."
+  ],
+  "actual_runtime_at_review": {
+    "Cycles_three_view_iteration_001": "Completed; actual three-view pixels inspected; hash-bound revise decision consumed.",
+    "Cycles_three_view_revision": "Iterations 002 and 003 completed; actual three-view raw pixels inspected; revision 002 consumed, final rejection consumed.",
+    "vision_api_adapter": "Not implemented; explicit file-review adapter only. No autonomous API loop claimed.",
+    "A_webgl": "not_run: Chromium launch blocked by socket() EPERM before page load.",
+    "C_webgl": "not_run: Chromium launch blocked by socket() EPERM before page load.",
+    "C_GLTFLoader_parse": "passed according to web/results/glb_validation.json; this is not WebGL-render evidence.",
+    "final_gate_state": "rejected",
+    "actual_render_iterations": 3,
+    "actual_review_decisions": [
+      "revise",
+      "revise",
+      "rejected"
+    ],
+    "active_seconds": 513.320844,
+    "paid_usd_spent": 0.0,
+    "final_beauty_acceptance": false,
+    "motion_preview": "36-frame earlier-look preview completed and decoded; all frame pixels inspected in sheets, no live video-playback/flicker acceptance."
+  },
+  "open_findings": [
+    {
+      "id": "EVID-002",
+      "priority": "P2",
+      "owner": "Render",
+      "finding": "Record generator source identity per iteration, not only spec/output hashes, to make code changes between iterations auditable.",
+      "acceptance_check": "Iteration metadata includes build_scene.py SHA-256 or a source commit, or explicitly labels code-changing comparisons as look-development revisions.",
+      "status": "resolved_for_future_runs",
+      "resolution": "Current runner writes builder.snapshot.py and records/checks its SHA-256 before each camera render. The completed real run began before this addition; its before/after is explicitly labeled look-development with source changes, not parameter-only control."
+    },
+    {
+      "id": "ANIM-002",
+      "priority": "P1",
+      "owner": "Animation",
+      "finding": "The separate motion helper used subprocess.run timeout without process-group cleanup at audit time.",
+      "acceptance_check": "Motion timeout terminates Blender and all descendants, verified by code/test evidence.",
+      "status": "resolved_in_source",
+      "resolution": "render_motion.py now calls the tested cgstudio.budget.run_renderer process-group wrapper. Per-frame callback also kills its owned POSIX process group. Original full motion render already completed; no forced-timeout real Blender motion run was performed."
+    }
+  ],
+  "no_claims": [
+    "No independent full-browser rendering or A/B/C optical equivalence.",
+    "No API-model automation or fabricated visual metrics.",
+    "No fluid simulation."
+  ],
+  "schema_files_match_runtime": true
+}

@@ -1,0 +1,110 @@
+{
+  "stage": "baseline",
+  "review_state": "changes_requested",
+  "scope": "Three Cycles still views at frame 18; no photographic reference was supplied or inspected.",
+  "renderer_evidence": {
+    "Blender": "4.3.2",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 32,
+    "denoising": false,
+    "source": "producer manifest and render logs"
+  },
+  "images": [
+    {
+      "camera": "hero",
+      "path": "/workspace/shared/cg_studio/runs/initial/hero.png",
+      "sha256": "681a42f9c7a026dd7ac5e0127dd1a95370ed1ee924f5e877b848f275cd60268f",
+      "bytes": 718835,
+      "inspected_actual_pixels": true,
+      "inspection_display": "native 640x640 via view_image"
+    },
+    {
+      "camera": "side",
+      "path": "/workspace/shared/cg_studio/runs/initial/side.png",
+      "sha256": "5ec607f430c8cabf0ad2a580946def346581b6a5a7d5e377dd0462b99c01bf84",
+      "bytes": 726244,
+      "inspected_actual_pixels": true,
+      "inspection_display": "native 640x640 via view_image"
+    },
+    {
+      "camera": "top",
+      "path": "/workspace/shared/cg_studio/runs/initial/top.png",
+      "sha256": "e905b6f1c864c611462dc7aee3661f653d72c3b0108e258f709464b0debb8863",
+      "bytes": 773446,
+      "inspected_actual_pixels": true,
+      "inspection_display": "native 640x640 via view_image"
+    }
+  ],
+  "positive_observations": [
+    "Top view visibly establishes hollow nozzle, cup wall/rim thickness, thick base, and distinct liquid free surface.",
+    "Vessel and witness cylinder have grounded soft contact shadows.",
+    "Metal witness carries shaped reflections and rounded edges.",
+    "No visible excessive bloom or overall blown-out wash."
+  ],
+  "findings": [
+    {
+      "id": "VIS-001",
+      "priority": "P1",
+      "owner": "Render",
+      "status": "open",
+      "views": [
+        "hero",
+        "side",
+        "top"
+      ],
+      "finding": "Obvious granular render noise obscures optical surfaces, silhouette edges, and the stream.",
+      "acceptance_check": "Inspect the same three images at native 640x640 after higher sampling or a validated denoising pass; wall, free surface and stream details must remain visibly interpretable without heavy grain."
+    },
+    {
+      "id": "VIS-002",
+      "priority": "P1",
+      "owner": "MaterialLighting",
+      "status": "open",
+      "views": [
+        "hero",
+        "side"
+      ],
+      "finding": "Bright broad card/light contributions make the lower volume resemble a pale opaque sleeve or insert, especially in hero.",
+      "acceptance_check": "Keep the refractive witness useful while reducing its dominant white contribution; the fill should read as a transparent volume with refracted detail and a distinct free surface."
+    },
+    {
+      "id": "VIS-003",
+      "priority": "P1",
+      "owner": "MaterialLighting",
+      "status": "open",
+      "views": [
+        "hero",
+        "side"
+      ],
+      "finding": "The stream nearly disappears across part of the gap between the nozzle and receiving vessel, preventing confident continuous-flow reading.",
+      "acceptance_check": "From nozzle to impact, preserve a visible continuous edge or reflection in all three matched views without turning the stream opaque."
+    },
+    {
+      "id": "EVID-001",
+      "priority": "P2",
+      "owner": "Render",
+      "status": "open",
+      "views": [],
+      "finding": "A single scene_manifest.json is overwritten by sequential cameras, losing camera-specific timing and prior GLB export status.",
+      "acceptance_check": "Retain one manifest per camera or an aggregate containing each camera, frame, output hash, renderer metadata, render seconds, and export evidence."
+    },
+    {
+      "id": "ANIM-001",
+      "priority": "P1",
+      "owner": "Animation",
+      "status": "pending_evidence",
+      "views": [],
+      "finding": "Only a single still-state per camera has been reviewed. The builder is labeled art-directed fixed topology; fluid_simulation is false. No animation continuity or fill progression has been established.",
+      "acceptance_check": "If animation is delivered, inspect multiple neighboring/milestone frames or actual video and verify stream continuity, fill progression, no popping/intersections, and temporal noise."
+    }
+  ],
+  "not_established": [
+    "Reference-image agreement",
+    "Animation or full-film quality",
+    "Hardware GPU use",
+    "A/B/C visual parity",
+    "Autonomous visual model review"
+  ],
+  "decision_owner": "Project director"
+}

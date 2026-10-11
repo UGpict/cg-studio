@@ -1,0 +1,38 @@
+[
+  {
+    "candidate": "iteration_001",
+    "checks": {
+      "same_cameras": true,
+      "same_frame": true,
+      "same_dimensions": true,
+      "same_seed": true,
+      "builder_snapshot_matches": true,
+      "image_hashes_match": true
+    },
+    "passed": true
+  },
+  {
+    "candidate": "iteration_002",
+    "checks": {
+      "same_cameras": true,
+      "same_frame": true,
+      "same_dimensions": true,
+      "same_seed": true,
+      "builder_snapshot_matches": true,
+      "image_hashes_match": true
+    },
+    "passed": true
+  },
+  {
+    "candidate": "iteration_003",
+    "checks": {
+      "same_cameras": true,
+      "same_frame": true,
+      "same_dimensions": true,
+      "same_seed": true,
+      "builder_snapshot_matches": true,
+      "image_hashes_match": true
+    },
+    "passed": true
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "approved_parameter_patch": {},
+  "image_sha256": "dfa99886c5afa8009fe41260b5ab3bf821301233bb584813af01a514d8126695",
+  "images_sha256": {
+    "hero": "dfa99886c5afa8009fe41260b5ab3bf821301233bb584813af01a514d8126695",
+    "side": "bd87f46000946ab72256eee62e8d0b8d11f21b573bbe8ae7df749fcf25584a2c",
+    "top": "abaff1ee05e5a0e3f9be350b297fdf2e1a9d381dbd3701a1a49d2a52d37ce6b9"
+  },
+  "issues": [
+    {
+      "priority": "P1",
+      "category": "lighting",
+      "observation": "MaterialLighting: final hero has a visibly bright short segment beneath the nozzle followed by a nearly invisible middle section before the stream reaches the cup. This persists in the denoised image.",
+      "requested_change": "For a future look-development run, establish continuous stream edge/reflection contrast from nozzle to impact at every approved view, without making the medium opaque. Do not render a fourth attempt in this bounded run."
+    },
+    {
+      "priority": "P2",
+      "category": "material",
+      "observation": "MaterialLighting: darkening reduces the pale lower-fill wash but compresses cup-wall/free-surface information; side still carries dominant bright reflected patches.",
+      "requested_change": "For a future run, separate background/negative-fill control from broad illumination and confirm clear-volume readability alongside the stream. Preserve visible rim/base thickness and metal contact cues."
+    },
+    {
+      "priority": "P2",
+      "category": "other",
+      "observation": "Render: raw final views retain conspicuous grain. OIDN substantially reduces it, while some fine transparent/free-surface detail is softened.",
+      "requested_change": "Keep raw and color-only denoised outputs distinctly labeled. A production pass needs a sampling/denoising choice checked against thin details and actual temporal playback."
+    }
+  ],
+  "iteration": 3,
+  "reviewer": {
+    "image_inspected": true,
+    "inspected_cameras": [
+      "hero",
+      "side",
+      "top"
+    ],
+    "kind": "vision_model",
+    "name": "Independent CG Studio visual reviewer"
+  },
+  "run_id": "fec70b31-3218-4280-ae88-eddc166c8229",
+  "spec_sha256": "ea35b88c3b79ba7a1c40413bf82f24a3f7c087e32891043653865c5526d7d9a5",
+  "status": "rejected",
+  "summary": "Final bounded look attempt: all three raw Cycles images and all three separately labeled HDR color-only OIDN versions were inspected. Geometry/thickness, shaped metal reflections, grounded support and reduced pale wash improved. However the hero stream loses visibility through a substantial middle section above the cup, so continuous pouring is not reliably readable. Darkening also suppresses some vessel/free-surface information; side remains dominated by bright reflected patches. This is a useful working CG prototype, not an accepted final beauty shot. Stop this run after three attempts; no fourth render is approved by this review. The review binds the raw three-view outputs, and qa/final_visual_review.json separately records denoised artifact hashes. No reference-photo match, GPU performance, browser appearance parity, fluid simulation, or final-film temporal quality is claimed."
+}

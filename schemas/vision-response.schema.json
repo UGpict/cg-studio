@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "protocol": {
+      "const": "cgstudio.vision.v1",
+      "type": "string"
+    },
+    "provider_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._-]+$",
+      "type": "string"
+    },
+    "references_sha256": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "label": {
+            "maxLength": 80,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9._-]+$",
+            "type": "string"
+          },
+          "sha256": {
+            "maxLength": 64,
+            "minLength": 64,
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "maxItems": 4,
+      "minItems": 0,
+      "type": "array"
+    },
+    "request_id": {
+      "maxLength": 36,
+      "minLength": 36,
+      "type": "string"
+    },
+    "review": {
+      "$id": "https://example.invalid/cg-studio/review.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "approved_parameter_patch": {
+          "additionalProperties": false,
+          "properties": {
+            "cup.ior": {
+              "maximum": 2.5,
+              "minimum": 1,
+              "type": "number"
+            },
+            "cup.roughness": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "lighting.exposure": {
+              "maximum": 8,
+              "minimum": -8,
+              "type": "number"
+            },
+            "lighting.fill_energy": {
+              "maximum": 10000,
+              "minimum": 0,
+              "type": "number"
+            },
+            "lighting.key_energy": {
+              "maximum": 10000,
+              "minimum": 0,
+              "type": "number"
+            },
+            "lighting.rim_energy": {
+              "maximum": 10000,
+              "minimum": 0,
+              "type": "number"
+            },
+            "lighting.stream_energy": {
+              "maximum": 5000,
+              "minimum": 0,
+              "type": "number"
+            },
+            "lighting.stream_size": {
+              "maximum": 3,
+              "minimum": 0.05,
+              "type": "number"
+            },
+            "lighting.world_strength": {
+              "maximum": 10,
+              "minimum": 0,
+              "type": "number"
+            },
+            "liquid.absorption_density": {
+              "maximum": 10,
+              "minimum": 0,
+              "type": "number"
+            },
+            "liquid.cloudiness": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "liquid.ior": {
+              "maximum": 2.5,
+              "minimum": 1,
+              "type": "number"
+            },
+            "liquid.meniscus_height": {
+              "maximum": 0.2,
+              "minimum": 0,
+              "type": "number"
+            },
+            "liquid.roughness": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "liquid.stream_radius": {
+              "maximum": 0.3,
+              "minimum": 0.005,
+              "type": "number"
+            },
+            "liquid.transmission": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "render.samples": {
+              "maximum": 256,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "stage.card_value": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "stage.card_width": {
+              "maximum": 3,
+              "minimum": 0.1,
+              "type": "number"
+            },
+            "stage.ground_value": {
+              "maximum": 2,
+              "minimum": 0.05,
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "image_sha256": {
+          "maxLength": 64,
+          "minLength": 64,
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "images_sha256": {
+          "additionalProperties": false,
+          "properties": {
+            "hero": {
+              "maxLength": 64,
+              "minLength": 64,
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "side": {
+              "maxLength": 64,
+              "minLength": 64,
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "top": {
+              "maxLength": 64,
+              "minLength": 64,
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "hero",
+            "side",
+            "top"
+          ],
+          "type": "object"
+        },
+        "issues": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "enum": [
+                  "geometry",
+                  "material",
+                  "lighting",
+                  "composition",
+                  "animation",
+                  "export",
+                  "other"
+                ],
+                "type": "string"
+              },
+              "observation": {
+                "maxLength": 10000,
+                "minLength": 1,
+                "type": "string"
+              },
+              "priority": {
+                "enum": [
+                  "P0",
+                  "P1",
+                  "P2",
+                  "P3"
+                ],
+                "type": "string"
+              },
+              "requested_change": {
+                "maxLength": 10000,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "priority",
+              "category",
+              "observation",
+              "requested_change"
+            ],
+            "type": "object"
+          },
+          "maxItems": 30,
+          "type": "array"
+        },
+        "iteration": {
+          "maximum": 3,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "reviewer": {
+          "additionalProperties": false,
+          "properties": {
+            "image_inspected": {
+              "const": true,
+              "type": "boolean"
+            },
+            "inspected_cameras": {
+              "items": {
+                "enum": [
+                  "hero",
+                  "side",
+                  "top"
+                ],
+                "type": "string"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "kind": {
+              "enum": [
+                "human",
+                "vision_model"
+              ],
+              "type": "string"
+            },
+            "name": {
+              "maxLength": 10000,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "kind",
+            "image_inspected",
+            "inspected_cameras"
+          ],
+          "type": "object"
+        },
+        "run_id": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "spec_sha256": {
+          "maxLength": 64,
+          "minLength": 64,
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "revise",
+            "rejected"
+          ],
+          "type": "string"
+        },
+        "summary": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "iteration",
+        "image_sha256",
+        "images_sha256",
+        "spec_sha256",
+        "status",
+        "reviewer",
+        "summary",
+        "issues",
+        "approved_parameter_patch"
+      ],
+      "title": "CG Studio completed visual review",
+      "type": "object"
+    },
+    "usage": {
+      "additionalProperties": false,
+      "properties": {
+        "paid_cost_usd": {
+          "const": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "paid_cost_usd"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "protocol",
+    "provider_id",
+    "request_id",
+    "review",
+    "references_sha256",
+    "usage"
+  ],
+  "title": "CG Studio local vision response",
+  "type": "object"
+}

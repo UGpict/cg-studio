@@ -1,0 +1,77 @@
+{
+  "japanese_supported": {
+    "status": "compiled",
+    "has_spec": true,
+    "issues": []
+  },
+  "english_supported": {
+    "status": "compiled",
+    "has_spec": true,
+    "issues": []
+  },
+  "negative_radius": {
+    "status": "needs_clarification",
+    "has_spec": false,
+    "issues": [
+      {
+        "kind": "needs_clarification",
+        "code": "unsupported_builder_profile",
+        "clause_index": 0,
+        "clause": "",
+        "message": "Cup base and rim shoulders need base_thickness > 0.035 and height - base_thickness > 0.060"
+      }
+    ]
+  },
+  "unsupported_model": {
+    "status": "unsupported",
+    "has_spec": false,
+    "issues": [
+      {
+        "kind": "unsupported",
+        "code": "scene_scope",
+        "clause_index": 2,
+        "clause": "add a dragon",
+        "message": "New objects, removal, assets and arbitrary scene/model changes are outside the resin benchmark."
+      }
+    ]
+  },
+  "contradiction": {
+    "status": "needs_clarification",
+    "has_spec": false,
+    "issues": [
+      {
+        "kind": "needs_clarification",
+        "code": "contradictory_parameter",
+        "clause_index": 2,
+        "clause": "cup.height=2.0",
+        "message": "Conflicting values for cup.height: 1.8 and 2.0. No precedence is assumed."
+      }
+    ]
+  },
+  "paid": {
+    "status": "unsupported",
+    "has_spec": false,
+    "issues": [
+      {
+        "kind": "unsupported",
+        "code": "budget_expansion",
+        "clause_index": 1,
+        "clause": "max paid cost usd=1",
+        "message": "budget.max_paid_cost_usd cannot exceed the base limit 0."
+      }
+    ]
+  },
+  "simulation": {
+    "status": "unsupported",
+    "has_spec": false,
+    "issues": [
+      {
+        "kind": "unsupported",
+        "code": "simulation_request",
+        "clause_index": 1,
+        "clause": "simulate real fluid viscosity",
+        "message": "The benchmark supports only art-directed fixed-topology motion; simulation and chemistry are unsupported."
+      }
+    ]
+  }
+}

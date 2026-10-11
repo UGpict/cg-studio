@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-11",
+  "scope": "frozen MVP, not visibility_v2",
+  "status": "blocked_before_page_load",
+  "environment": "cloud browser validation environment",
+  "navigation": {
+    "url": "http://127.0.0.1:8765/web/index.html?mode=A&camera=hero",
+    "result": "net::ERR_CONNECTION_REFUSED"
+  },
+  "executor_cross_call_http_check": "ConnectionRefusedError: [Errno 111] Connection refused",
+  "same_process_http_check": {
+    "status": 200,
+    "expected_harness_title": true
+  },
+  "server_cleanup": "stopped, process exit code 130",
+  "original_chromium_eperm_retried": false,
+  "public_hosting_attempted": false,
+  "renderer_observed": null,
+  "hardware_gpu_benchmark": false,
+  "screenshots": [],
+  "timings": [],
+  "runs": [
+    {
+      "mode": "A",
+      "camera": "hero",
+      "status": "not_run"
+    },
+    {
+      "mode": "A",
+      "camera": "side",
+      "status": "not_run"
+    },
+    {
+      "mode": "A",
+      "camera": "top",
+      "status": "not_run"
+    },
+    {
+      "mode": "C",
+      "camera": "hero",
+      "status": "not_run"
+    },
+    {
+      "mode": "C",
+      "camera": "side",
+      "status": "not_run"
+    },
+    {
+      "mode": "C",
+      "camera": "top",
+      "status": "not_run"
+    }
+  ],
+  "sources": {
+    "web/viewer.js": "a88e6bc6afcf5cd893e5b256ad8c6e4040dc50f407804b7660ab0ab6d4cda640",
+    "web/index.html": "722152866c8edfdfe1b95488bb51309cd62e0505c1412f9b09feef5e2baaf171",
+    "scripts/capture_web.mjs": "15da012a4f27c628597843ebfb88d5b7c8fb1191ab5e0f85cc6e2afc8a655d1f",
+    "specs/clear_resin_final.json": "ea35b88c3b79ba7a1c40413bf82f24a3f7c087e32891043653865c5526d7d9a5",
+    "samples/resin_scene.glb": "60a63a2f10b4bed817f6018218f92ecea186b7cf88281f6cbcb2122a997af23a"
+  }
+}

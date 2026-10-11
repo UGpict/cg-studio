@@ -1,0 +1,177 @@
+{
+  "validatedAt": "2026-10-11T12:52:37.655Z",
+  "path": "samples/resin_scene.glb",
+  "stage": "GLTFLoader parse only, no WebGL rendering",
+  "status": "passed",
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.3.47",
+    "version": "2.0"
+  },
+  "extensions": [
+    "KHR_materials_transmission",
+    "KHR_materials_volume",
+    "KHR_materials_ior"
+  ],
+  "objects": [
+    {
+      "name": "Cup_|_closed_wall_and_base",
+      "vertices": 1282,
+      "triangles": 2560,
+      "materials": [
+        {
+          "name": "Vessel | polished borosilicate",
+          "type": "MeshPhysicalMaterial",
+          "transmission": 1,
+          "ior": 1.4600000381469727,
+          "thickness": 0.06499999761581421,
+          "roughness": 0.02500000037252903,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Resin_|_closed_fill_volume_and_meniscus",
+      "vertices": 2818,
+      "triangles": 5632,
+      "materials": [
+        {
+          "name": "Resin | clear optical medium",
+          "type": "MeshPhysicalMaterial",
+          "transmission": 1,
+          "ior": 1.4900000095367432,
+          "thickness": 1.600000023841858,
+          "roughness": 0.017999999225139618,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Resin_|_continuous_art-directed_stream",
+      "vertices": 2328,
+      "triangles": 4652,
+      "materials": [
+        {
+          "name": "Resin stream | web thickness approximation",
+          "type": "MeshPhysicalMaterial",
+          "transmission": 1,
+          "ior": 1.4900000095367432,
+          "thickness": 0.18000000715255737,
+          "roughness": 0.017999999225139618,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Feed_nozzle_|_real_hollow_steel",
+      "vertices": 576,
+      "triangles": 1152,
+      "materials": [
+        {
+          "name": "Metal witness | brushed steel",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.18000000715255737,
+          "metalness": 1
+        }
+      ]
+    },
+    {
+      "name": "Metal_witness_|_cylinder",
+      "vertices": 1865,
+      "triangles": 1916,
+      "materials": [
+        {
+          "name": "Metal witness | brushed steel",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.18000000715255737,
+          "metalness": 1
+        }
+      ]
+    },
+    {
+      "name": "Studio_ground",
+      "vertices": 4,
+      "triangles": 2,
+      "materials": [
+        {
+          "name": "Studio | blue-grey satin",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.27000001072883606,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Refraction_card",
+      "vertices": 250,
+      "triangles": 188,
+      "materials": [
+        {
+          "name": "Refraction witness | card",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.3199999928474426,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Refraction_marker",
+      "vertices": 304,
+      "triangles": 188,
+      "materials": [
+        {
+          "name": "Refraction witness | dark blue",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.30000001192092896,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Refraction_marker001",
+      "vertices": 304,
+      "triangles": 188,
+      "materials": [
+        {
+          "name": "Refraction witness | dark blue",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.30000001192092896,
+          "metalness": 0
+        }
+      ]
+    },
+    {
+      "name": "Refraction_marker002",
+      "vertices": 304,
+      "triangles": 188,
+      "materials": [
+        {
+          "name": "Refraction witness | dark blue",
+          "type": "MeshStandardMaterial",
+          "transmission": 0,
+          "ior": null,
+          "thickness": null,
+          "roughness": 0.30000001192092896,
+          "metalness": 0
+        }
+      ]
+    }
+  ]
+}

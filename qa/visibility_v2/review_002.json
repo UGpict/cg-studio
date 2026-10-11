@@ -1,0 +1,63 @@
+{
+  "candidate": "visibility_v2/002",
+  "decision": "one_final_bounded_geometry_diagnostic_recommended",
+  "scope": "Actual raw and HDR color-only OIDN pixels for hero, side, top at 640x640; still-frame only.",
+  "images": {
+    "hero.png": {
+      "path": "experiments/visibility_v2/iteration_002/hero.png",
+      "sha256": "b8effab258fae1eb317d0f3703620a8e718027fd17e92e9f9ab6ef419131c2b8"
+    },
+    "hero_linear_color_only_oidn.png": {
+      "path": "experiments/visibility_v2/iteration_002/hero_linear_color_only_oidn.png",
+      "sha256": "1e2e1587521fa7489a9981c1cac65db9cf29a80fa599f725437f920b1579fda0"
+    },
+    "side.png": {
+      "path": "experiments/visibility_v2/iteration_002/side.png",
+      "sha256": "aba216a5dd30b90e640bc47c9fc00567fd438d74a026798e2095267351f1efbe"
+    },
+    "side_linear_color_only_oidn.png": {
+      "path": "experiments/visibility_v2/iteration_002/side_linear_color_only_oidn.png",
+      "sha256": "991b6695584d13bd86ed2975b7eeb59e95a5d4779efb295261ca84acbf275979"
+    },
+    "top.png": {
+      "path": "experiments/visibility_v2/iteration_002/top.png",
+      "sha256": "fd75a7d6f7923e2ba80d3f86a387daf7e224364341002c4316cb6112eaa69670"
+    },
+    "top_linear_color_only_oidn.png": {
+      "path": "experiments/visibility_v2/iteration_002/top_linear_color_only_oidn.png",
+      "sha256": "f5c78a0d20294789a1e1fb9defe2dc84f67ef13202dd577f9400074f5efd7d7d"
+    }
+  },
+  "findings": [
+    {
+      "id": "V2-STREAM",
+      "owner": "MaterialLighting",
+      "status": "resolved_for_inspected_stills",
+      "observation": "Upper stream remains visibly continuous in all three views and connects to a supported feed source."
+    },
+    {
+      "id": "V2-INTERFACE",
+      "owner": "Modeling/MaterialLighting",
+      "status": "substantially_resolved",
+      "observation": "The candidate-001 broad black band is removed. Top view establishes a connected stream/free surface.",
+      "caveat": "Uniform lower side-view tone is not alone evidence of opaque liquid; the studio background is largely featureless."
+    },
+    {
+      "id": "V2-SHADING",
+      "priority": "P2",
+      "owner": "Modeling",
+      "observation": "Broad bent wall highlights and a rounded/lens-like apparent free surface remain. Smooth-normal interpolation across long tapered-wall faces may contribute; this is a source-based hypothesis, not a proven root cause.",
+      "acceptance_check": "Straight vessel walls have coherent reflection bands while retaining believable rim/base bevels; the free surface remains clearly bounded by the vessel."
+    },
+    {
+      "id": "V2-IMPACT",
+      "priority": "P2",
+      "owner": "Modeling",
+      "observation": "The impact junction has a bright rounded nub, especially in hero. A hidden stream cap/duplicate interface may contribute; this is a hypothesis.",
+      "acceptance_check": "Stream meets the receiving surface continuously without an isolated bead/cap appearance or implausible intersection."
+    }
+  ],
+  "recommendation": "Use the final allowed candidate for wall support rings and a live Boolean stream/fill union, holding cameras, lighting, spec, seed, samples and display fixed. Record evaluated topology changes, preserve shape-key inputs, and do not claim equivalent GLB optics or final animation acceptance.",
+  "reference_comparison": "Qualitative REF-01/REF-02 stream continuity and connected-impact cues are now substantially better. Different vessel/background prevent exact-match or material-calibration conclusions.",
+  "raw_vs_denoised": "OIDN removes grain but softens fine surface detail; raw evidence is retained."
+}

@@ -1,0 +1,73 @@
+{
+  "decision": "accepted_as_low_sample_motion_demonstration",
+  "scope": "Actual pixels of all 36 color-only OIDN frames inspected in six sequential native-384x384 sheets; individual frames 1 and 18 also inspected separately. Final MP4 was not watched in a live video player.",
+  "scene": "experiments/visibility_v2/iteration_003/scene.blend",
+  "video": {
+    "path": "experiments/visibility_v2/motion_003/preview.mp4",
+    "sha256": "32eaee2ef9341bc91ee9d31a25c5d3a07ecd0453fc54a798abc93ca21d8f0ece",
+    "width": 384,
+    "height": 384,
+    "frames": 36,
+    "fps": 12,
+    "seconds": 3,
+    "codec": "H.264",
+    "decode_validation": "passed"
+  },
+  "observations": [
+    "Fill level rises progressively through all frames.",
+    "Upper stream stays visibly continuous and source/receiving surface remain spatially connected.",
+    "No missing frame, gross silhouette discontinuity or large Boolean-union pop is apparent in the frame-by-frame image inspection.",
+    "Cup rim/base, reflective metal witness and grounded support remain consistent.",
+    "Fine surface/reflection details change and are spatially softened by color-only OIDN; no temporal-denoising claim."
+  ],
+  "geometry_support": "All 36 evaluated cup/resin states pass producer single-component/manifold/positive-volume checks with monotonically increasing resin volume. This does not prove fluid physics.",
+  "limitations": [
+    "Live perceptual playback and flicker-free final-film quality are not verified.",
+    "384x384, 16-sample, 12-fps preview is not a full-resolution production film.",
+    "Art-directed shape-key inputs plus live Boolean union have changing evaluated topology; no equivalent GLB animation/optics claim.",
+    "No fluid simulation or chemical readiness claim."
+  ],
+  "frames_inspected": {
+    "0001.png": "5a5178150d8b5fc20a6eee1fc922f0054c000f91767c643816f8a372ad335061",
+    "0002.png": "4349d1fe676f85639e1e470b0fe1a49aaecf3a04e4b8fc54d854dce478fb6b11",
+    "0003.png": "a0f805cf58991a6b80bd7c71d15cfcd14a9a84d82a1b2cdefee199605b3d510f",
+    "0004.png": "207b833d6a4a2c7275d0daa2e42e7cf90b3bedd6e79323b2c61fd919da702761",
+    "0005.png": "12e2e94fe889a15e669e9add009d3ef5c2f000f7e036f8a05f539b9d90f681d0",
+    "0006.png": "76388bb3e7cdc55ad6eabe20572382515be48b00ff4cb3f1f2ef73db1dda9d3e",
+    "0007.png": "8ebd79e404e03dca30ac815d66990b23827ea7946904a2a75efbcdbd4e6c6e11",
+    "0008.png": "8e2ec0b2eadb8a6b6543e9fc887e71992869b65f0de8d5abfa5f111e70acb797",
+    "0009.png": "dd20b00a99b23013cc0fc72f83c94694d88cc30feccb27b25d027da80ff60387",
+    "0010.png": "e4d04b09b826462dbcd488948545c1cef3f93000bd1653f7ebf58d9f78f33808",
+    "0011.png": "c479ef2f8475a9b341ad3cf702068d6ce5694fc68e22270cf9e4e15f2cc2cd02",
+    "0012.png": "820beb615a15675cee9a957814ac5d6cce3eca9ea67efd97dac3fd379ef1113f",
+    "0013.png": "0bd947b8ac1a7cd6290a78115a400153beb784dc6bb63ffea03309e8013bef63",
+    "0014.png": "ff37aa0329c5068224905db792caa7a5b45ce92f704a407ce98c6739609c9359",
+    "0015.png": "cea152de47e5616eaaef31b34f91fd49718a6aac46e67a1491a3e560812dade1",
+    "0016.png": "230739daf435d39b881ca2eaf4a65c167cd00acee454d61c6d277fdcc14a88cc",
+    "0017.png": "d76ed1cb3c15edd22387755f293767bda23220fae89e4526e5e65184341890b5",
+    "0018.png": "cbf6f00765da43f0e650c8bc37e4c6ccbef7ba4ecf2c6e5133a7ad018acb3179",
+    "0019.png": "c7d8f643cfcf4511f407d274848655d31434d8e56a5a5b67b062a5e75e07094f",
+    "0020.png": "b1659e1a397e3374e933d122e6f837d5f36f1e6bb9c49f8775d419825d580b8b",
+    "0021.png": "6685bef63c5d0c50582c87f94df2ad8b769be2f839c6d38fbf3ac588fe5a914f",
+    "0022.png": "3c0a00c9eb762ff8659cc361a918c84c4cc39656d8bc3b3796f7d53aaa2c1eeb",
+    "0023.png": "ae660a711c81316659ece0897c98733e39b9103d7137541bbffd36e65a4ee66f",
+    "0024.png": "77920f171bbe6a8f9f5f98a4b8b3bb05b6c0dde6c1c509b8b4dc028188ee8657",
+    "0025.png": "38d3d1731244bde76539f5a0338514d0fcfa108797d13da3fa247aeec933d3f8",
+    "0026.png": "256f9526669465d955b122410cb42045e4e5903d5eb94112883ecbbf32433011",
+    "0027.png": "2eb7561f952a28e3315159605bc080bc3d04509bd0ad6b1e81938b68e6602c61",
+    "0028.png": "3ba0cc2e671e188ed1ef42c867459bc326f3c9eb2552afa12f9831eb888cc41a",
+    "0029.png": "c117a1268e94a264870a3a6ed7c14c99a5e574bb8b26cebf0feee8a72fc726c8",
+    "0030.png": "6f48b59171e72a45bdffa968fd9a3d86057c81a94c11d94e0919cd29a9ba346e",
+    "0031.png": "315328f10b803b33ad3b4b87426767e368673cde158157c77f2c646ea8591511",
+    "0032.png": "24d0e65c113e652c6e8568e99d1c6685decc2cbd6df18abb78e9f91df816dfd7",
+    "0033.png": "1cb8a20356ffb7e586ec342b06d39e3e654b000d7e72f49d197f05a961397367",
+    "0034.png": "10fe14d073f87548a306eadb3cb64554993915ee8be3e3654554d8f63444553e",
+    "0035.png": "f1b52547434be780fd83a424051c7772d5c0fc8c823cff2b0547514df6061c74",
+    "0036.png": "003c5842cbc2bbd28c90553f1aaac10cf5df92619207a5588c2bab9d7d8c597f"
+  },
+  "comparison_sheet": {
+    "path": "experiments/visibility_v2/matched_denoised_comparison.png",
+    "actual_pixels_inspected": true,
+    "observation": "Both rows are labeled denoised: frozen rejected MVP and visibility_v2 candidate 003 at matching cameras. This is a multi-variable look-development comparison; raw evidence remains separately available."
+  }
+}

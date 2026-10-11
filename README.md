@@ -10,9 +10,13 @@ The first target contains a closed thick glass vessel, closed clear resin volume
 
 ## Current validation status
 
-The pipeline is executable and tested. The first bounded look run ended **rejected / changes requested** after 3 iterations and 9 real views (513.32 active seconds, $0). The final hero still loses part of the clear stream against the dark background. This repository includes working outputs and the failed quality gate; it does not claim that the final-film quality goal is achieved.
+The first bounded look run ended **rejected / changes requested** after 3 iterations and 9 real views (513.32 active seconds, $0). Those original `samples/` and review records remain unchanged.
 
-See `samples/three_view_final_attempt.png`, `samples/matched_denoised_comparison.png` and `qa/final_visual_review.json`. The MP4 is explicitly the earlier iteration-002 look, with rising fill and an unfinished optical treatment. Scene dimensions are normalized benchmark units, not manufacturing specifications.
+A separate [offline visibility prototype](experiments/visibility_v2/README.md) subsequently passed actual three-view readability review. Its 36-frame, 384×384, 12 fps motion demonstration was decoded and all frame pixels were independently inspected. The stream/contact and clear-volume appearance improved. This is prototype acceptance, not a photoreal-final or flicker-free film claim. It uses Cycles-specific optical interfaces and changing Boolean geometry; **equivalent GLB export is not implemented** for this look. The original GLB benchmark remains available separately.
+
+The full software suite passes 103 tests (25 pipeline, 52 compiler, 26 vision protocol). Vision tests use explicitly labeled test doubles; no live vision model is configured. A/C browser pixels and live automatic visual review remain unverified. See the [completion matrix](qa/visibility_v2/completion_matrix.md), [latest comparison](experiments/visibility_v2/matched_denoised_comparison.png) and [three views](experiments/visibility_v2/three_view_final.png).
+
+Scene dimensions are normalized benchmark units, not manufacturing specifications. Remote publication is incomplete; [manual publication](docs/manual-publication.md) records the verified draft-PR state and the authenticated-user import command.
 
 ## Quick start
 
@@ -20,6 +24,7 @@ Requirements: Python 3.10+, Blender 4.3+ on PATH. The tested environment uses Bl
 
 ```sh
 python -m cgstudio validate --spec specs/clear_resin.json
+chmod +x tests/fake_blender.py  # Restore fixture mode if your ZIP extractor strips it.
 python -m unittest discover -s tests -v
 python -m cgstudio run --spec specs/clear_resin.json --output runs/my-shot
 python -m cgstudio status --output runs/my-shot
@@ -37,11 +42,22 @@ Defaults and hard ceilings: **3 iterations, 1,800 active seconds total, 180 seco
 
 ## Natural language and roles
 
-The director interprets a brief and fills the strict JSON scene spec; it does not execute arbitrary text as Python. Modeling, material/lighting, animation, rendering and visual QA have explicit handoffs in `agents/`. This repository runs without an LLM service. An unattended vision/API adapter is **unconfigured**: human or an image-capable agent review is required. No fabricated vision score or automatic approval is provided.
+The closed English/Japanese brief compiler converts supported resin-pour requests into the strict spec and stops on unsupported or contradictory clauses. It is not a general text-to-3D model. Modeling, material/lighting, animation, rendering and visual QA have explicit handoffs in `agents/`. The optional local stdio vision adapter and bounded unattended coordinator are implemented, but no real vision provider is configured and no live autonomous model review has run. The default remains explicit human/agent review. See [brief and vision integration](docs/brief-and-vision.md) for exact supported language, provider requirements, reference-image handling and test-double limits.
 
 Example brief: “Clear resin pours into a thick transparent cup. Show real wall thickness, a clean meniscus, readable refraction, soft contact shadows and a metal object for reflection reference.”
 
-Keep product claims and chemical process requirements separate from the visualization. The pour is an **art-directed fixed-topology animation, not a fluid simulation or chemistry model**.
+Keep product claims and chemical process requirements separate from the visualization. The original GLB pour uses art-directed fixed-topology animation; the separate offline prototype adds a live Boolean union with changing evaluated topology. Neither is a fluid simulation or chemistry model.
+
+## Compile a supported brief
+
+```sh
+python -m cgstudio.brief compile \
+  --brief '透明なレジンを厚みのある透明なカップに注ぐ。解像度は512x512。サンプル数は32。' \
+  --output runs/brief-report.json --spec-output runs/compiled-spec.json
+python -m cgstudio validate --spec runs/compiled-spec.json
+```
+
+Unknown clauses block compilation rather than being silently dropped. An unconfigured `python -m cgstudio.auto --output runs/my-shot` does not fabricate a provider result.
 
 ## Direct scene build
 
@@ -72,6 +88,7 @@ A/C Chromium rendering was blocked in this execution environment before page loa
 - `tests/`: deterministic orchestration tests; Blender renders are separately recorded
 - `qa/`: actual independent visual reviews, with limitations and unresolved defects
 - `samples/`: validated output subset and evidence retained with the deliverable
+- `experiments/visibility_v2/`: separately accepted offline prototype, curated evidence and native scene
 - `runs/`: reproducible working renders, excluded from Git
 
-The existing film project is untouched. This is a separate local Git repository. No GitHub repository, remote push, cloud GPU purchase or persistent access has been created.
+The existing film project is untouched. This is a separate local Git repository. Source publication is handled through a draft pull request. No cloud GPU purchase or persistent credential setup is included.

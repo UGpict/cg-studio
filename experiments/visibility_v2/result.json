@@ -1,0 +1,26 @@
+{
+  "still_status": "accepted_for_three_view_still_scope",
+  "review": "qa/visibility_v2/review_003.json",
+  "final_scene": "experiments/visibility_v2/iteration_003/scene.blend",
+  "source": "experiments/visibility_v2/iteration_003/builder_snapshot.py",
+  "comparison": "experiments/visibility_v2/matched_denoised_comparison.png",
+  "three_views": "experiments/visibility_v2/three_view_final.png",
+  "static_candidates": 3,
+  "fixed_camera_renders": 9,
+  "measured_render_and_denoise_seconds": 728.2595445940005,
+  "paid_usd": 0,
+  "motion_status": "validated low-sample motion demonstration; all 36 frames inspected independently; no live-playback or flicker-free guarantee",
+  "glb_status": "not exported for final experimental interface/live-Boolean look; frozen MVP route remains unchanged",
+  "limitations": [
+    "Still-look prototype acceptance, not photoreal-final or complete-film approval.",
+    "Input shape keys remain; evaluated Boolean topology changes.",
+    "Single-frame color-only OIDN can soften detail or flicker.",
+    "No fluid simulation or measured optical material calibration.",
+    "No exact photographic reference-match claim."
+  ],
+  "motion_review": "qa/visibility_v2/motion_review_003.json",
+  "motion": "experiments/visibility_v2/motion_003/preview.mp4",
+  "measured_active_seconds": 902.9089401650017,
+  "accounted_seconds_with_auxiliary_reserve": 962.9089401650017,
+  "budget_within_limit": true
+}

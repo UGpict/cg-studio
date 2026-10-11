@@ -1,0 +1,192 @@
+{
+  "frames": [
+    {
+      "frame": 1,
+      "seconds": 10.491414207001071
+    },
+    {
+      "frame": 2,
+      "seconds": 9.019427286000791
+    },
+    {
+      "frame": 3,
+      "seconds": 8.077568773998792
+    },
+    {
+      "frame": 4,
+      "seconds": 8.372048361999987
+    },
+    {
+      "frame": 5,
+      "seconds": 7.810310157999993
+    },
+    {
+      "frame": 6,
+      "seconds": 7.367755670000406
+    },
+    {
+      "frame": 7,
+      "seconds": 7.749292112999683
+    },
+    {
+      "frame": 8,
+      "seconds": 8.212992802000372
+    },
+    {
+      "frame": 9,
+      "seconds": 8.269499023001117
+    },
+    {
+      "frame": 10,
+      "seconds": 11.092576420000114
+    },
+    {
+      "frame": 11,
+      "seconds": 8.243494275999183
+    },
+    {
+      "frame": 12,
+      "seconds": 11.715821603000222
+    },
+    {
+      "frame": 13,
+      "seconds": 9.462489247000121
+    },
+    {
+      "frame": 14,
+      "seconds": 8.209604801999376
+    },
+    {
+      "frame": 15,
+      "seconds": 8.022856042000058
+    },
+    {
+      "frame": 16,
+      "seconds": 9.812992971999847
+    },
+    {
+      "frame": 17,
+      "seconds": 9.04722738700002
+    },
+    {
+      "frame": 18,
+      "seconds": 9.954872623999108
+    },
+    {
+      "frame": 19,
+      "seconds": 8.3909877649985
+    },
+    {
+      "frame": 20,
+      "seconds": 8.36083236900049
+    },
+    {
+      "frame": 21,
+      "seconds": 11.238330790998589
+    },
+    {
+      "frame": 22,
+      "seconds": 9.418112549001307
+    },
+    {
+      "frame": 23,
+      "seconds": 11.65192313300031
+    },
+    {
+      "frame": 24,
+      "seconds": 11.70959662399946
+    },
+    {
+      "frame": 25,
+      "seconds": 10.505957817998933
+    },
+    {
+      "frame": 26,
+      "seconds": 11.449177911999868
+    },
+    {
+      "frame": 27,
+      "seconds": 10.056483140999262
+    },
+    {
+      "frame": 28,
+      "seconds": 10.90682036599901
+    },
+    {
+      "frame": 29,
+      "seconds": 12.253442339000685
+    },
+    {
+      "frame": 30,
+      "seconds": 12.202163170999484
+    },
+    {
+      "frame": 31,
+      "seconds": 12.237111102000199
+    },
+    {
+      "frame": 32,
+      "seconds": 12.06562403099997
+    },
+    {
+      "frame": 33,
+      "seconds": 9.511701268000252
+    },
+    {
+      "frame": 34,
+      "seconds": 7.9254365649994725
+    },
+    {
+      "frame": 35,
+      "seconds": 7.867633828998805
+    },
+    {
+      "frame": 36,
+      "seconds": 8.142594582001038
+    }
+  ],
+  "animation_mode": "art-directed fixed-topology shape-key fill and continuous stream",
+  "fluid_simulation": false,
+  "temporal_denoising": false,
+  "denoising": "color-only OIDN HDR",
+  "display_transform": "AgX",
+  "look": "None",
+  "exposure": 0.0,
+  "width": 384,
+  "height": 384,
+  "samples": 16,
+  "fps": 12,
+  "validation": "passed",
+  "video_decode": "passed",
+  "png_decode_count": 36,
+  "video": "/workspace/shared/cg_studio/runs/motion_final/preview.mp4",
+  "ffprobe": {
+    "codec_name": "h264",
+    "width": 384,
+    "height": 384,
+    "r_frame_rate": "12/1",
+    "duration": "3.000000",
+    "nb_read_frames": "36"
+  },
+  "contact_sheet": "/workspace/shared/cg_studio/runs/motion_final/contact_sheet.png",
+  "first_last_display_difference": {
+    "width": 384,
+    "height": 384,
+    "mean_absolute_difference_8bit": 4.159896285445602,
+    "maximum_channel_difference_8bit": 157
+  },
+  "elapsed_seconds": 350.85475453800063,
+  "limitations": [
+    "Shape-key demonstration, not a fluid simulation.",
+    "Low-sample preview is not a final-quality render.",
+    "Color-only OIDN, when enabled, can soften details or flicker over time.",
+    "Successful decode and frame differences do not establish visual or physical quality."
+  ],
+  "visual_review": {
+    "inspected": "Frames 1, 18, 36 contact sheet, plus representative earlier frames",
+    "rising_fill_visible": true,
+    "stream_readability": "Upper stream remains a thin, visually interrupted-looking highlight despite mesh-contact evidence.",
+    "quality_status": "QA preview, not accepted beauty render",
+    "temporal_quality": "Spatial color-only denoise; no flicker-free playback approval claimed."
+  }
+}

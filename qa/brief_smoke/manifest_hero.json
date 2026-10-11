@@ -1,0 +1,196 @@
+{
+  "builder_sha256": "0fcbb956b0c43034fecc239a87e72633df0325f4bc965d10ce55305810b2dd11",
+  "spec_file_sha256": "c9ab3fbbb01101020c1aa55dd545bccbd8a9fd74fd90e51762c1805aa1746240",
+  "blender_version": "4.3.2",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "denoise": false,
+  "samples": 8,
+  "seed": 42,
+  "camera": "hero",
+  "frame": 18,
+  "animation_mode": "art_directed_fixed_topology",
+  "fluid_simulation": false,
+  "spec": {
+    "animation": {
+      "fill_end": 1.32,
+      "fill_start": 0.62,
+      "fps": 12,
+      "frames": 36,
+      "hero_frame": 18,
+      "mode": "art_directed_fixed_topology"
+    },
+    "brief": "\u900f\u660e\u306a\u30ec\u30b8\u30f3\u3092\u539a\u307f\u306e\u3042\u308b\u900f\u660e\u306a\u30ab\u30c3\u30d7\u306b\u6ce8\u3050\u3002\u89e3\u50cf\u5ea6\u306f128x128\u3002\u30b5\u30f3\u30d7\u30eb\u6570\u306f8\u3002",
+    "budget": {
+      "max_iterations": 3,
+      "max_paid_cost_usd": 0,
+      "per_render_seconds": 180,
+      "total_seconds": 1800
+    },
+    "cameras": {
+      "hero": {
+        "ortho_scale": 4.7,
+        "position": [
+          5.2,
+          -7.5,
+          4.4
+        ],
+        "target": [
+          0,
+          0,
+          1.35
+        ]
+      },
+      "side": {
+        "ortho_scale": 4.7,
+        "position": [
+          4.8,
+          -8.5,
+          2.65
+        ],
+        "target": [
+          0,
+          0,
+          1.35
+        ]
+      },
+      "top": {
+        "ortho_scale": 4.7,
+        "position": [
+          3.7,
+          -5.5,
+          7.0
+        ],
+        "target": [
+          0,
+          0,
+          1.2
+        ]
+      }
+    },
+    "cup": {
+      "base_thickness": 0.13,
+      "height": 1.65,
+      "ior": 1.46,
+      "outer_radius": 1.0,
+      "roughness": 0.055,
+      "wall_thickness": 0.065
+    },
+    "lighting": {
+      "exposure": 0.0,
+      "fill_energy": 480,
+      "key_energy": 750,
+      "rim_energy": 900,
+      "stream_energy": 0,
+      "stream_size": 0.16,
+      "world_strength": 0.3
+    },
+    "liquid": {
+      "absorption_color": [
+        0.94,
+        0.99,
+        1.0
+      ],
+      "absorption_density": 0.06,
+      "cloudiness": 0.0,
+      "fill_height": 0.96,
+      "ior": 1.49,
+      "meniscus_height": 0.032,
+      "roughness": 0.045,
+      "stream_radius": 0.07,
+      "stream_top": 2.8,
+      "transmission": 1.0
+    },
+    "project": "clear-resin-pour",
+    "render": {
+      "denoise": false,
+      "device": "CPU",
+      "engine": "CYCLES",
+      "height": 128,
+      "samples": 8,
+      "seed": 42,
+      "transparent": false,
+      "width": 128
+    },
+    "schema_version": 1,
+    "stage": {
+      "card_value": 1.0,
+      "card_width": 2.1,
+      "ground_value": 1.0
+    }
+  },
+  "objects": [
+    {
+      "name": "Cup | closed wall and base",
+      "type": "MESH"
+    },
+    {
+      "name": "Resin | closed fill volume and meniscus",
+      "type": "MESH"
+    },
+    {
+      "name": "Resin | continuous art-directed stream",
+      "type": "MESH"
+    },
+    {
+      "name": "Feed nozzle | real hollow steel",
+      "type": "MESH"
+    },
+    {
+      "name": "Metal witness | cylinder",
+      "type": "MESH"
+    },
+    {
+      "name": "Studio ground",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction card",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction marker",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction marker.001",
+      "type": "MESH"
+    },
+    {
+      "name": "Refraction marker.002",
+      "type": "MESH"
+    },
+    {
+      "name": "Key softbox",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Cool fill",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Rim strip",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Camera_hero",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_side",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_top",
+      "type": "CAMERA"
+    }
+  ],
+  "limitations": [
+    "Art-directed fixed-topology pour; not a fluid simulation",
+    "No denoising by default on this CPU build",
+    "GLB optics differ from Cycles; volumetric scattering does not transfer"
+  ],
+  "glb_export": "success",
+  "render_seconds": 0.5013338749995455,
+  "elapsed_seconds": 1.045093820999682
+}

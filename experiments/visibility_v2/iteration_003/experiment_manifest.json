@@ -1,0 +1,20 @@
+{
+  "iteration": "003",
+  "baseline": "runs/gated/iteration_003",
+  "builder_sha256": "0a0e4f052c57157713b242573c21d8a7e60cde2024604f66055e3cbe9e685b3e",
+  "same_cameras_frame_dimensions_display": true,
+  "comparison_type": "multi-variable look-development revision, not controlled quality benchmark",
+  "images": {
+    "top_linear_color_only_oidn.png": "e6e468d462cac7bf8b77f4983a6d18e076c74b5231fac18285679d7467855448",
+    "top_linear_color_only_oidn_raw_display.png": "57d942b271f0227c6fe13de69e07c15d7b63eee2a9a47f13004db2fa2efa6953",
+    "side_linear_color_only_oidn.png": "31fe5adaca61b57811fef4d088bc32d29dfba3f5f2b38d11a1543c4edd4b0fb5",
+    "hero.png": "7581ea4bf0f8eff6fc9fa00aa178ec6147c4f9567ae480d9bfc55c2a84e7867e",
+    "top.png": "5a2d1fcc5a2a7d930b37deb51183df19bdc85a4df97bb6f36e0497c0e8141a51",
+    "hero_linear_color_only_oidn.png": "1b09d200f4060003a0f636fd3fa0cda5b951924d0bfd5495f01c9b06c50c6b8b",
+    "side_linear_color_only_oidn_raw_display.png": "6305bfd6aac43dc13e32ce65fe8ed8449a0069057df131ab96d5807739c68db7",
+    "side.png": "b9036d6433c12fe03db220a407af71f55c33a86cd8ef83a12acc895eeeeecba3",
+    "hero_linear_color_only_oidn_raw_display.png": "66535bc79c59d7b6c999a99e86292e679f3196f0af53c168fde5b428ebe48c95"
+  },
+  "paid_usd": 0,
+  "acceptance": "pending independent pixel review"
+}

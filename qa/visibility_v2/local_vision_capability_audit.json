@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-11T13:30:34.308025+00:00",
+  "status": "no_ready_local_vision_model_found_in_checked_scope",
+  "scope": {
+    "paths": [
+      "/workspace (bounded asset search, maximum depth 6)",
+      "/opt (bounded asset search, maximum depth 6; Python executables maximum depth 7)"
+    ],
+    "active_python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "read_only": true,
+    "credentials_or_private_home_search": false,
+    "network_requests": 0,
+    "installs": 0,
+    "model_downloads": 0,
+    "model_inferences": 0
+  },
+  "executables": {
+    "found": [
+      "python",
+      "python3"
+    ],
+    "not_found_on_path": [
+      "ollama",
+      "llama-cli",
+      "llama-server",
+      "llama.cpp",
+      "vllm",
+      "nvidia-smi"
+    ]
+  },
+  "active_python_packages": {
+    "unavailable": [
+      "torch",
+      "transformers",
+      "llama_cpp",
+      "ollama",
+      "vllm",
+      "accelerate",
+      "safetensors",
+      "huggingface_hub",
+      "onnxruntime"
+    ],
+    "available": {
+      "Pillow": "12.3.0",
+      "numpy": "2.3.5"
+    }
+  },
+  "model_assets": {
+    "matching_files_found": [],
+    "patterns": [
+      "*.gguf",
+      "*.safetensors",
+      "pytorch_model*.bin",
+      "*mmproj*"
+    ],
+    "conventional_roots_all_absent": [
+      "/workspace/models",
+      "/workspace/shared/models",
+      "/workspace/.cache/huggingface",
+      "/workspace/shared/.cache/huggingface",
+      "/workspace/shared/.ollama/models",
+      "/opt/models",
+      "/opt/ollama",
+      "/opt/huggingface",
+      "/opt/llama.cpp",
+      "/opt/codex/models"
+    ],
+    "limitations": "Bounded filename and directory search; other paths, deeper files, other Python environments and externally hosted models were not exhaustively inspected."
+  },
+  "hardware": {
+    "cpu_name": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "available_cpu_affinity_count": 9,
+    "memtotal_kib": 10206504,
+    "memavailable_kib_snapshot": 8290056,
+    "workspace_free_disk_rounded_gib": 28,
+    "visible_gpu_devices": [],
+    "gpu_paths_checked": [
+      "/dev/nvidia*",
+      "/dev/dri",
+      "/dev/kfd"
+    ],
+    "cgroup_cpu_memory_limits": "not available at conventional cgroup-v2 cpu.max/memory.max paths; no quota claim"
+  },
+  "feasibility": {
+    "ready_now": false,
+    "reason": "Neither an inference runtime nor actual model weights were found in the checked scope. The existing CG vision module implements only a trusted local stdio protocol, not model inference.",
+    "possible_next_step": "After resource/setup authorization, select an official-source compact vision-capable model and compatible CPU runtime, account for its full weights plus image encoder and runtime memory, then benchmark one exact three-view/ref request under the existing 60-second call limit.",
+    "inference_not_benchmark": "A compact quantized CPU vision model may be feasible within observed resources; this has not been demonstrated. Do not claim that it can meet the current deadline or deliver reliable material/geometry review.",
+    "measured_model_latency_seconds": null,
+    "download_size_bytes": null,
+    "setup_duration_seconds": null,
+    "cost": "This audit used no paid API and made no model call. Future local inference has no model API charge if genuinely local, but infrastructure/resource cost and download/storage requirements are not established. A paid remote provider needs separately bounded permission."
+  },
+  "required_acceptance": [
+    "Actual local model consumes the exact three PNGs and optional reference bytes, not only their names or summaries.",
+    "Its returned findings are image-dependent, schema-valid and exactly hash-bound.",
+    "At least one review-change-render-review chain completes within persisted attempt/time/cost budgets.",
+    "Compare the automated conclusions against independently inspected known-bad and improved renders; a valid JSON response alone is not visual-review quality."
+  ],
+  "conclusion": "Use the precise statement: no ready-to-run local vision model was found in this checked cloud environment. Do not generalize to user computers, private caches, other runtimes or all available providers."
+}

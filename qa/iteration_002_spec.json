@@ -1,0 +1,108 @@
+{
+  "animation": {
+    "fill_end": 1.32,
+    "fill_start": 0.62,
+    "fps": 12,
+    "frames": 36,
+    "hero_frame": 18,
+    "mode": "art_directed_fixed_topology"
+  },
+  "brief": "Clear resin pours continuously into a thick transparent vessel. Show believable thickness, refraction, a visible free surface, soft grounded shadows and a metal witness object.",
+  "budget": {
+    "max_iterations": 3,
+    "max_paid_cost_usd": 0,
+    "per_render_seconds": 180,
+    "total_seconds": 1800
+  },
+  "cameras": {
+    "hero": {
+      "ortho_scale": 4.7,
+      "position": [
+        5.2,
+        -7.5,
+        4.4
+      ],
+      "target": [
+        0,
+        0,
+        1.35
+      ]
+    },
+    "side": {
+      "ortho_scale": 4.7,
+      "position": [
+        4.8,
+        -8.5,
+        2.65
+      ],
+      "target": [
+        0,
+        0,
+        1.35
+      ]
+    },
+    "top": {
+      "ortho_scale": 4.7,
+      "position": [
+        3.7,
+        -5.5,
+        7.0
+      ],
+      "target": [
+        0,
+        0,
+        1.2
+      ]
+    }
+  },
+  "cup": {
+    "base_thickness": 0.13,
+    "height": 1.65,
+    "ior": 1.46,
+    "outer_radius": 1.0,
+    "roughness": 0.025,
+    "wall_thickness": 0.065
+  },
+  "lighting": {
+    "exposure": 0.0,
+    "fill_energy": 480,
+    "key_energy": 750,
+    "rim_energy": 900,
+    "stream_energy": 500,
+    "stream_size": 0.9,
+    "world_strength": 0.3
+  },
+  "liquid": {
+    "absorption_color": [
+      0.94,
+      0.99,
+      1.0
+    ],
+    "absorption_density": 0.06,
+    "cloudiness": 0.0,
+    "fill_height": 0.96,
+    "ior": 1.49,
+    "meniscus_height": 0.032,
+    "roughness": 0.018,
+    "stream_radius": 0.09,
+    "stream_top": 2.8,
+    "transmission": 1.0
+  },
+  "project": "clear-resin-pour",
+  "render": {
+    "denoise": false,
+    "device": "CPU",
+    "engine": "CYCLES",
+    "height": 640,
+    "samples": 96,
+    "seed": 42,
+    "transparent": false,
+    "width": 640
+  },
+  "schema_version": 1,
+  "stage": {
+    "card_value": 0.22,
+    "card_width": 2.1,
+    "ground_value": 0.35
+  }
+}
