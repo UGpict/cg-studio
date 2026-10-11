@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+node_modules/
+runs/
+*.blend1
+.DS_Store
+web/results/.browser-home/
+*.egg-info/
+build/
+dist/
